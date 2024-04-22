@@ -36,6 +36,56 @@
 				"security": [],
 				"parameters": []
 			}
+		},
+		"/sign-up": {
+			"post": {
+				"operationId": "SignupUser",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {}
+						}
+					}
+				}
+			}
+		},
+		"/verify": {
+			"post": {
+				"operationId": "VerifyUser",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {}
+						}
+					}
+				}
+			}
 		}
 	},
 	"servers": [
