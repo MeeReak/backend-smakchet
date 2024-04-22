@@ -1,5 +1,5 @@
 {
-    "entryFile": "monolith/src/app.ts",
+    "entryFile": "src/app.ts",
     "noImplicitAdditionalProperties": "throw-on-extras",
     "spec": {
       "outputDirectory": "public",
