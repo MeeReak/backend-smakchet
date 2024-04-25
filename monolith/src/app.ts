@@ -26,4 +26,5 @@ app.use("/", authRoute);
 
 app.use(errorHandler);
 
+
 export default app;
