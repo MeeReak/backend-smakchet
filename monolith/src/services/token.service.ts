@@ -1,5 +1,20 @@
 import {Token} from "../databases/models/verifyToken.model";
+import { tokenRepository } from "../repositories/token.repository";
 
-export async function saveToken(userId:string, token:string , expired: Date) {
-  await Token.create({ userId, token , expired});
+export class tokenService{
+
+  tokenrepository : tokenRepository;
+
+  constructor(){
+    this.tokenrepository = new tokenRepository();
+  }
+
+  async createToken(Tokendata:any){
+    try{
+      return await this.tokenrepository.saveToken(Tokendata)
+    }catch(error:unknown | any){
+      throw new Error(error);
+    }
+  }
+
 }

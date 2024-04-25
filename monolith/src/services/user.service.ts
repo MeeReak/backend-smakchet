@@ -8,7 +8,7 @@ export class userService{
         this.userreposity = new userRepository();
     }
 
-    async CreateUser(userdata:any){
+    async createUser(userdata:any){
         try{
             return await this.userreposity.SaveUser(userdata);
         }catch(error){

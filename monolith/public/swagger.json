@@ -6,7 +6,43 @@
 		"parameters": {},
 		"requestBodies": {},
 		"responses": {},
-		"schemas": {},
+		"schemas": {
+			"AuthModel": {
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					},
+					"googleId": {
+						"type": "string"
+					},
+					"isVerify": {
+						"type": "boolean"
+					},
+					"role": {
+						"type": "string"
+					},
+					"created_at": {
+						"type": "string",
+						"format": "date-time"
+					}
+				},
+				"required": [
+					"username",
+					"email",
+					"password",
+					"role",
+					"created_at"
+				],
+				"type": "object",
+				"additionalProperties": false
+			}
+		},
 		"securitySchemes": {}
 	},
 	"info": {
@@ -18,25 +54,6 @@
 		"contact": {}
 	},
 	"paths": {
-		"/monolith-health": {
-			"get": {
-				"operationId": "ShowHealth",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "string"
-								}
-							}
-						}
-					}
-				},
-				"security": [],
-				"parameters": []
-			}
-		},
 		"/sign-up": {
 			"post": {
 				"operationId": "SignupUser",
@@ -56,7 +73,9 @@
 					"required": true,
 					"content": {
 						"application/json": {
-							"schema": {}
+							"schema": {
+								"$ref": "#/components/schemas/AuthModel"
+							}
 						}
 					}
 				}
@@ -76,15 +95,16 @@
 					}
 				},
 				"security": [],
-				"parameters": [],
-				"requestBody": {
-					"required": true,
-					"content": {
-						"application/json": {
-							"schema": {}
+				"parameters": [
+					{
+						"in": "query",
+						"name": "token",
+						"required": true,
+						"schema": {
+							"type": "string"
 						}
 					}
-				}
+				]
 			}
 		}
 	},
