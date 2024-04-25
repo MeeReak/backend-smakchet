@@ -10,13 +10,19 @@ import { generateEmailVerificationToken } from "../utils/randomToken";
 import { sendVerificationEmail } from "../utils/emailConfig";
 import axios from "axios";
 import { IUser, User } from "../databases/models/user.model";
+import { authService } from "../services/auth.service";
+import { AuthModel } from "../controllers/@type/auth.type";
+import {
+  IOrganization,
+  Organization,
+} from "../databases/models/organization.model";
 
 require("dotenv").config();
 
 const authRoute = express.Router();
 
 const authcontroller = new authController();
-
+const authservice = new authService();
 
 // google config
 const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
@@ -26,7 +32,7 @@ const REDIRECT_URI = "http://localhost:3000/auth/google/callback";
 // facebook config
 const APP_ID = process.env.APP_ID;
 const APP_SECRET = process.env.APP_SECRET;
-const FB_REDIRECT_URI = 'http://localhost:3000/auth/facebook/callback';
+const FB_REDIRECT_URI = "http://localhost:3000/auth/facebook/callback";
 
 // Sign up account
 authRoute.post(
@@ -34,7 +40,6 @@ authRoute.post(
   validateUserData(authSchema),
   async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { email, role, username, password } = req.body;
       const userdata = await authcontroller.SignupUser(req.body);
       res.status(201).json(userdata);
     } catch (error: unknown | any) {
@@ -157,71 +162,96 @@ authRoute.get("/auth/google/callback", async (req, res) => {
   }
 });
 
-authRoute.get("/logout", (req, res) => {
-  // Handle user logout logic
-  res.redirect("/login");
-});
-
-
 // login with facebook
 
-// Initiates the Facebook Login flow
-authRoute.get('/auth/facebook', (req, res) => {
+authRoute.get("/auth/facebook", (req, res) => {
   const url = `https://www.facebook.com/v13.0/dialog/oauth?client_id=${APP_ID}&redirect_uri=${FB_REDIRECT_URI}`;
   res.redirect(url);
 });
 
-// Callback URL for handling the Facebook Login response
-authRoute.get('/auth/facebook/callback', async (req, res) => {
-  const { code } = req.query;
-
+authRoute.get("/auth/facebook/callback", async (req, res) => {
   try {
-    // Exchange authorization code for access token
-    const { data } = await axios.get(`https://graph.facebook.com/v13.0/oauth/access_token?client_id=${APP_ID}&client_secret=${APP_SECRET}&code=${code}&redirect_uri=${FB_REDIRECT_URI}`);
+    const { code } = req.query;
 
-    const { access_token } = data;
+    if (!code) {
+      throw new Error("Authorization code not provided");
+    }
 
-    // Use access_token to fetch user profile
-    const { data: profile } = await axios.get(`https://graph.facebook.com/v13.0/me?fields=name,email&access_token=${access_token}`);
+    const tokenResponse = await axios.get(
+      `https://graph.facebook.com/v13.0/oauth/access_token`,
+      {
+        params: {
+          client_id: APP_ID,
+          client_secret: APP_SECRET,
+          code: code,
+          redirect_uri: FB_REDIRECT_URI,
+        },
+      }
+    );
 
-    // Check if user already exists in the database based on googleId
+    const { access_token } = tokenResponse.data;
+
+    const profileResponse = await axios.get(
+      `https://graph.facebook.com/v13.0/me`,
+      {
+        params: {
+          fields: "name,email",
+          access_token: access_token,
+        },
+      }
+    );
+
+    const profile = profileResponse.data;
+
+    if (!profile || !profile.email) {
+      throw new Error("Failed to fetch user profile or email from Facebook");
+    }
+
     let user = await Auth.findOne({ email: profile.email });
 
     if (user) {
-      throw new Error("Email already , please sign-up with another acount");
+      throw new Error("Email already exists, please sign in with another account");
     }
-    
-    // Create a new user if not found
-    const newUser: IAuth = new Auth({
+
+    const newAuth = new Auth({
       username: profile.name,
       email: profile.email,
       isVerify: true,
-      googleId: profile.id,
-      role: "host",
-    });
-    await newUser.save();
-
-    const userInfo: IUser = new User({
-      username: profile.name,
-      email: profile.email,
+      facebookId: profile.id,
       role: "host",
     });
 
-    await userInfo.save();
+    const authCollect = await newAuth.save();
 
-    // Generate JWT token
-    const token = generateToken(newUser._id);
-    // Save the new user to the database
+    if (authCollect.role === "host") {
+      const userInfo = new Organization({
+        username: profile.name,
+        email: profile.email,
+      });
+
+      await userInfo.save();
+    } else {
+      const userInfo = new User({
+        username: profile.name,
+        email: profile.email,
+      });
+
+      await userInfo.save();
+    }
+
+    const token = generateToken(authCollect._id);
     res.json({ token: token });
   } catch (error:unknown | any) {
-    res.json({message:  error.response.data.error})
+    console.error("Error in Facebook callback:", error.message);
+    res.status(500).json({ message: "Failed to authenticate via Facebook" });
   }
 });
 
+
 // Logout route
-authRoute.get('/logout', (req, res) => {
+authRoute.get("/logout", (req, res) => {
   // Code to handle user logout
-  res.redirect('/login');
+  res.redirect("/login");
 });
 
 export default authRoute;

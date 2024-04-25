@@ -2,7 +2,6 @@ import { Body, Post, Route, Controller, Query } from "tsoa";
 import { authService } from "../services/auth.service";
 import { generateEmailVerificationToken } from "../utils/randomToken";
 import { sendVerificationEmail } from "../utils/emailConfig";
-
 import { Auth, IAuth } from "../databases/models/auth.model";
 import { userService } from "../services/user.service";
 import { hostService } from "../services/organization.service";
@@ -10,6 +9,7 @@ import { Token } from "../databases/models/verifyToken.model";
 import { generateToken } from "../utils/generateJWT";
 import { tokenService } from "../services/token.service";
 import { Organization } from "../databases/models/organization.model";
+import {AuthModel} from "./@type/auth.type"
 
 const authservice = new authService();
 const userservice = new userService();
@@ -19,7 +19,7 @@ const tokenservice = new tokenService();
 @Route("/")
 export class authController extends Controller {
   @Post("/sign-up")
-  public async SignupUser(@Body() requestbody: any): Promise<any> {
+  public async SignupUser(@Body() requestbody: AuthModel): Promise<any> {
     try {
       const { email, password, username, role } = requestbody;
 
