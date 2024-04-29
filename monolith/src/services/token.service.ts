@@ -13,7 +13,7 @@ export class tokenService{
     try{
       return await this.tokenrepository.saveToken(Tokendata)
     }catch(error:unknown | any){
-      throw new Error(error);
+      throw error;
     }
   }
 

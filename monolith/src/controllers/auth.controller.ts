@@ -1,4 +1,4 @@
-import { Body, Post, Route, Controller, Query } from "tsoa";
+import { Body, Post, Route, Controller, Query , Tags} from "tsoa";
 import { authService } from "../services/auth.service";
 import { generateEmailVerificationToken } from "../utils/randomToken";
 import { sendVerificationEmail } from "../utils/emailConfig";
@@ -8,8 +8,7 @@ import { hostService } from "../services/organization.service";
 import { Token } from "../databases/models/verifyToken.model";
 import { generateToken } from "../utils/generateJWT";
 import { tokenService } from "../services/token.service";
-import { Organization } from "../databases/models/organization.model";
-import {AuthModel} from "./@type/auth.type"
+import { AuthModel, LoginModel } from "./@type/auth.type";
 
 const authservice = new authService();
 const userservice = new userService();
@@ -17,6 +16,7 @@ const hostservice = new hostService();
 const tokenservice = new tokenService();
 
 @Route("/")
+@Tags("Authentication") 
 export class authController extends Controller {
   @Post("/sign-up")
   public async SignupUser(@Body() requestbody: AuthModel): Promise<any> {
@@ -31,7 +31,7 @@ export class authController extends Controller {
         data: user,
       };
     } catch (error: unknown | any) {
-      throw new Error(error);
+      throw error;
     }
   }
   @Post("/verify")
@@ -100,7 +100,24 @@ export class authController extends Controller {
 
       await Token.deleteOne({ token });
     } catch (error: unknown | any) {
-      throw new Error(error);
+      throw error;
     }
   }
+
+  // Login Controller
+  @Post("/login")
+  public async loginUser(@Body() userInfo:LoginModel):Promise<any>{
+    try{
+      const token = await authservice.LoginUser(userInfo);
+
+      return {
+        message : "Login successfully, welcome to our app.",
+        Token : token
+      }
+    }catch(error:unknown | any){
+      throw error;
+    }
+    
+  }
+
 }

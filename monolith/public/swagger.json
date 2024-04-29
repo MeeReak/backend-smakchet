@@ -36,8 +36,117 @@
 					"username",
 					"email",
 					"password",
+					"googleId",
+					"isVerify",
 					"role",
 					"created_at"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"LoginModel": {
+				"properties": {
+					"email": {
+						"type": "string"
+					},
+					"password": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"email",
+					"password"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"EventModel": {
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"location": {
+						"properties": {
+							"coordinates": {
+								"properties": {
+									"lng": {
+										"type": "number",
+										"format": "double"
+									},
+									"lat": {
+										"type": "number",
+										"format": "double"
+									}
+								},
+								"required": [
+									"lng",
+									"lat"
+								],
+								"type": "object"
+							},
+							"address": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"coordinates",
+							"address"
+						],
+						"type": "object"
+					},
+					"category": {
+						"type": "string"
+					},
+					"thumbnail": {
+						"type": "string"
+					},
+					"host_id": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"viewer": {
+						"type": "number",
+						"format": "double"
+					},
+					"date": {
+						"properties": {
+							"endtime": {
+								"type": "string",
+								"format": "date-time"
+							},
+							"starttime": {
+								"type": "string",
+								"format": "date-time"
+							},
+							"enddate": {
+								"type": "string",
+								"format": "date-time"
+							},
+							"startdate": {
+								"type": "string",
+								"format": "date-time"
+							}
+						},
+						"required": [
+							"endtime",
+							"starttime",
+							"enddate",
+							"startdate"
+						],
+						"type": "object"
+					}
+				},
+				"required": [
+					"name",
+					"location",
+					"category",
+					"thumbnail",
+					"host_id",
+					"description",
+					"viewer",
+					"date"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -67,6 +176,9 @@
 						}
 					}
 				},
+				"tags": [
+					"Authentication"
+				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
@@ -94,11 +206,140 @@
 						}
 					}
 				},
+				"tags": [
+					"Authentication"
+				],
 				"security": [],
 				"parameters": [
 					{
 						"in": "query",
 						"name": "token",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/login": {
+			"post": {
+				"operationId": "LoginUser",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Authentication"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/LoginModel"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/event": {
+			"post": {
+				"operationId": "CreateEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Event API"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/EventModel"
+							}
+						}
+					}
+				}
+			},
+			"get": {
+				"operationId": "GetAllEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Event API"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "perPage",
+						"required": true,
+						"schema": {
+							"format": "double",
+							"type": "number"
+						}
+					},
+					{
+						"in": "query",
+						"name": "page",
+						"required": true,
+						"schema": {
+							"format": "double",
+							"type": "number"
+						}
+					}
+				]
+			}
+		},
+		"/api/event/{id}": {
+			"get": {
+				"operationId": "GetById",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Event API"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
 						"required": true,
 						"schema": {
 							"type": "string"
