@@ -55,7 +55,6 @@ authRoute.get(
     try {
       const { token } = req.query;
       const verifyData = await authcontroller.verifyUser(token);
-
       res.status(200).render("verify");
     } catch (error: unknown | any) {
       next(error);
@@ -71,28 +70,10 @@ authRoute.post(
     try {
       const { email, password } = req.body;
 
-      // Check if the user with the given email exists
-      const user: IAuth | null = await Auth.findOne({ email });
-
-      if (!user) {
-        return res.status(400).json({ message: "Invalid email or password." });
-      }
-      // Compare the password with the hashed password stored in the database
-      const isPasswordValid = await bcrypt.compare(password, user.password);
-
-      if (!isPasswordValid) {
-        return res.status(400).json({ message: "Invalid email or password." });
-      }
-
-      if (!user.isVerify) {
-        return res.status(400).json({ message: "Email hasn't verified yet!" });
-      }
-
-      // Generate JWT token
-      const token = generateToken(user._id);
+      const userToken = await authcontroller.loginUser(req.body);
 
       // Return success message along with the token
-      res.json({ message: "Login successfully, welcome to our app.", token });
+      res.json(userToken);
     } catch (error) {
       next(error);
     }
@@ -137,10 +118,11 @@ authRoute.get("/auth/google/callback", async (req, res) => {
     // Create a new user if not found
     const newUser: IAuth = new Auth({
       username: profile.name,
-      email: profile.email,
+      email   : profile.email,
+      password: profile.password,
       isVerify: true,
       googleId: profile.id,
-      role: "host",
+      role    : "host",
     });
     await newUser.save();
 

@@ -1,5 +1,6 @@
 import { AuthRepository } from "../repositories/auth.repository";
 import { sendVerificationEmail } from "../utils/emailConfig";
+import { generateToken } from "../utils/generateJWT";
 import { hashPassword } from "../utils/hashPassword";
 import { generateEmailVerificationToken } from "../utils/randomToken";
 import { tokenService } from "./token.service";
@@ -15,6 +16,7 @@ export class authService {
     this.tokenservice = new tokenService();
   }
 
+  // Sign-up user
   async createAuth(userData: any) {
     try {
 
@@ -42,6 +44,17 @@ export class authService {
       await sendVerificationEmail(authdata.email, verificationLink)
       return authdata;
     } catch (error) {
+      throw error;
+    }
+  }
+
+  // login Account
+  async LoginUser(userInfo:any){
+    try{
+      const user = await this.authRepository.LoginUser(userInfo);
+      const token = generateToken(user._id);
+      return token;
+    }catch(error:unknown | any){
       throw error;
     }
   }

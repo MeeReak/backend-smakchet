@@ -1,7 +1,7 @@
 import mongoose, { Document } from "mongoose";
 
 export interface IToken extends Document {
-  userId   : mongoose.Schema.Types.ObjectId;
+  userId    : mongoose.Schema.Types.ObjectId;
   token     : string;
   create_at : Date;
   expired   : Date;
