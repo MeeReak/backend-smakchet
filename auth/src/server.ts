@@ -7,9 +7,9 @@ import getConfig from "./utils/createConfig";
 const config = getConfig();
 
 // READ FILE JWT PUBLIC KEY FIRST
-export const publickey = fs.readFileSync(
+export const privateKey = fs.readFileSync(
   path.join(__dirname, "../private_key.pem"),
-  "utf8"
+  "utf-8"
 );
 
 //conect to the moongo

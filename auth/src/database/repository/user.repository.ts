@@ -1,15 +1,17 @@
 import APIError from "@api-gateway/Errors/api-error";
 import UserModel from "../model/user.model";
 import DuplicateError from "@api-gateway/Errors/duplicat-error";
-import { UserSignUp, UserUpdate } from "./@types/user.repository.type";
+
 import { StatusCode } from "@api-gateway/utils/consts";
+import { UserSignUp, UserUpdate } from "./@types/repository.type";
 
 export class UserRepository {
+
+
   async CreateUser(userDetail: UserSignUp) {
     try {
       return await UserModel.create(userDetail);
     } catch (error: unknown) {
-      console.log("error", error);
       if (error instanceof DuplicateError) {
         throw error;
       }
@@ -29,7 +31,7 @@ export class UserRepository {
   //fint user by id
   async FindUserById({ id }: { id: string }) {
     try {
-      return await UserModel.findById({ id: id });
+      return await UserModel.findById(id);
     } catch (error) {
       throw new APIError("Unable to Find User in Database");
     }

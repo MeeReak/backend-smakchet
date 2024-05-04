@@ -21,4 +21,18 @@ AuthRoute.post(
   }
 );
 
+AuthRoute.get(
+  ROUTE_PATHS.AUTH.VERIFY,
+  async (req: Request, res: Response, _next: NextFunction) => {
+    try {
+      const controller = new UserController();
+
+      await controller.VerifyEmail(req.query.token as string);
+      res.status(StatusCode.Accepted).json("Succues");
+    } catch (error: unknown) {
+      _next(error);
+    }
+  }
+);
+
 export default AuthRoute;
