@@ -1,4 +1,4 @@
-import express from "express";
+import express, { NextFunction, Request, Response } from "express";
 import getConfig from "./utils/createConfig";
 import hpp from "hpp";
 import helmet from "helmet";
@@ -31,7 +31,10 @@ app.use(
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "200mb" }));
 app.use(express.static("public"));
-
+app.use((_req: Request, _res: Response, _next: NextFunction) => {
+  console.log(_req.path, _req.method);
+  _next();
+});
 //routes
 app.use("/v1/auth", AuthRoute);
 
