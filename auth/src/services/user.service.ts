@@ -1,12 +1,16 @@
 import { UserRepository } from "@api-gateway/database/repository/user.repository";
 import { UserSignUp } from "./@types/user.service.type";
-import { generateToken, hashPassword } from "@api-gateway/utils/generate";
+import {
+  generateToken,
+  generateVerifyToken,
+} from "@api-gateway/utils/generate";
 import DuplicateError from "@api-gateway/Errors/duplicat-error";
 // import BaseCustomError from "@api-gateway/Errors/base-custom-error";
 // import { StatusCode } from "@api-gateway/utils/consts";
 import APIError from "@api-gateway/Errors/api-error";
 import { TokenRepository } from "@api-gateway/database/repository/token.repository";
 import { StatusCode } from "@api-gateway/utils/consts";
+import { hashPassword, verifyPassword } from "@api-gateway/utils/password";
 
 export class UserService {
   private userRepo: UserRepository;
@@ -24,7 +28,6 @@ export class UserService {
   // If Error, Check Duplication
   // Duplication case 1: Sign Up Without Verification
   // Duplication case 2: Sign Up With The Same Email
-  // save token and id to database
 
   async create(userDetail: UserSignUp) {
     try {
@@ -45,22 +48,7 @@ export class UserService {
       }
 
       let newData = { ...userDetail, password: hasdPassword };
-      const user = await this.userRepo.CreateUser(newData);
-      //step 4
-      const token = await generateToken(user.id, user.username);
-      const currentDate = new Date();
-      const expiredDate = new Date(currentDate.getTime() + 2 * 60 * 1000); // Adding 2 minutes
-
-      const tokenDetail = {
-        userId: user.id,
-        token: token,
-        create_at: currentDate,
-        expired: expiredDate,
-      };
-
-      await this.tokenRepo.Create(tokenDetail);
-
-      return user;
+      return await this.userRepo.CreateUser(newData);
     } catch (error: unknown) {
       if (error instanceof DuplicateError) {
         throw error;
@@ -69,7 +57,28 @@ export class UserService {
     }
   }
 
-  // NOTE : THIS METHOD WILL USE BY VERIFY USER WITH TOKEN
+  // TODO:
+  // Generate Verify Token
+  // Save the Verify Token in the Database
+  async saveVerifyToken({ id }: { id: string }) {
+    try {
+      const token = await generateVerifyToken();
+      const currentDate = new Date();
+      const expiredDate = new Date(currentDate.getTime() + 1 * 60 * 1000); // Adding 2 minutes
+
+      const tokenDetail = {
+        userId: id,
+        token: token,
+        create_at: currentDate,
+        expired: expiredDate,
+      };
+
+      return await this.tokenRepo.Create(tokenDetail);
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+
   // TODO :
   // find the token in the database
   // find that user in the database
@@ -84,6 +93,26 @@ export class UserService {
         throw new APIError(
           "Verification token is invalid",
           StatusCode.BadRequest
+        );
+      }
+
+      if (new Date() > exitedToken.expired) {
+        await this.tokenRepo.DeleleToken({ token: exitedToken.token });
+        const token = await generateVerifyToken();
+        const currentDate = new Date();
+        const expiredDate = new Date(currentDate.getTime() + 1 * 60 * 1000); // Adding 2 minutes
+
+        const tokenDetail = {
+          userId: exitedToken.userId,
+          token: token,
+          create_at: currentDate,
+          expired: expiredDate,
+        };
+
+        await this.tokenRepo.Create(tokenDetail);
+        throw new APIError(
+          "That Token is Expired. Please check a new Token!!",
+          StatusCode.NotFound
         );
       }
 
@@ -108,5 +137,38 @@ export class UserService {
     }
   }
 
+  // TODO:
+  // Find user by email
+  // Validate the password
+  // Generate Token & Return
+  async login({ email, password }: { email: string; password: string }) {
+    try {
+      const existedUser = await this.userRepo.FindUserByEmail({ email });
 
+      if (!existedUser) {
+        throw new APIError("User not exist", StatusCode.NotFound);
+      }
+
+
+      const isPassword = await verifyPassword({
+        password: password,
+        hashPassword: existedUser.password,
+      });
+
+      if (!isPassword) {
+        throw new APIError(
+          "The email or password you entered is incorrect. Please double-check and try again."
+        );
+      }
+
+      const jwtToken = await generateToken(
+        existedUser.id,
+        existedUser.username
+      );
+
+      return jwtToken;
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
 }
