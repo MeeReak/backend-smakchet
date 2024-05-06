@@ -8,11 +8,9 @@ const authSchema = new Schema(
     },
     email: {
       type: String,
-      required: true,
     },
     password: {
       type: String,
-      required: true,
     },
     isVerify: {
       type: Boolean,
@@ -26,6 +24,15 @@ const authSchema = new Schema(
     role: {
       type: String,
       enum: ["Organizer", "Volunteer"],
+    },
+    facebookId: {
+      type: String,
+      unique: true,
+      sparse: true,
+    },
+    profileUrl: {
+      type: String,
+      unique: true,
     },
   },
   {

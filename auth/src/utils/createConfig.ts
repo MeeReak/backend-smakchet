@@ -14,6 +14,12 @@ function createConfig(configPath: string) {
     "RABBITMQ_ENDPOINT",
     "CLIENT_URL",
     "JWT_EXPIRES_IN",
+    "GOOGLE_CLIENT_ID",
+    "GOOGLE_REDIRECT_URI",
+    "GOOGLE_CLIENT_SECRET",
+    "FACEBOOK_APP_ID",
+    "FACEBOOK_APP_SECRET",
+    "FACEBOOK_REDIRECT_URI",
   ];
   const missingConfig = requiredConfig.filter((key) => !process.env[key]);
 
@@ -33,6 +39,12 @@ function createConfig(configPath: string) {
     clientUrl: process.env.CLIENT_URL,
     apiGateway: process.env.API_GATEWAY,
     jwtExpiresIn: process.env.JWT_EXPIRES_IN,
+    googleClientId: process.env.GOOGLE_CLIENT_ID,
+    googleRedirectUri: process.env.GOOGLE_REDIRECT_URI,
+    googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    facebookAppId: process.env.FACEBOOK_APP_ID,
+    facebookAppSecret: process.env.FACEBOOK_APP_SECRET,
+    facebookRedirectUri: process.env.FACEBOOK_REDIRECT_URI,
   };
 }
 
