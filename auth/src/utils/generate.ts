@@ -1,7 +1,7 @@
-import { privateKey } from "@api-gateway/server";
 import jwt from "jsonwebtoken";
 import { randomBytes } from "crypto";
 import getConfig from "./createConfig";
+import { privateKey } from "@auth/server";
 
 export const generateVerifyToken = async () => {
   try {

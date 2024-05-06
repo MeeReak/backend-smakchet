@@ -1,4 +1,4 @@
-import APIError from "@api-gateway/Errors/api-error";
+import APIError from "@auth/Errors/api-error";
 import bcrypt from "bcrypt";
 
 export const hashPassword = async (password: string) => {

@@ -1,9 +1,8 @@
-import APIError from "@api-gateway/Errors/api-error";
+import DuplicateError from "@auth/Errors/duplicat-error";
 import UserModel from "../model/user.model";
-import DuplicateError from "@api-gateway/Errors/duplicat-error";
-
-import { StatusCode } from "@api-gateway/utils/consts";
 import { UserSignUp, UserUpdate } from "./@types/repository.type";
+import APIError from "@auth/Errors/api-error";
+import { StatusCode } from "@auth/utils/consts";
 
 export class UserRepository {
   async CreateUser(userDetail: UserSignUp) {

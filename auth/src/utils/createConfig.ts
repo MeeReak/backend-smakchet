@@ -1,5 +1,5 @@
+import APIError from "@auth/Errors/api-error";
 import dotenv from "dotenv";
-import APIError from "@api-gateway/Errors/api-error";
 import path from "path";
 
 function createConfig(configPath: string) {
