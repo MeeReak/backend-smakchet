@@ -1,8 +1,8 @@
-import { ROUTE_PATHS } from "@api-gateway/routes/v1/route-defs";
-import { UserService } from "@api-gateway/services/user.service";
-import { StatusCode } from "@api-gateway/utils/consts";
-import getConfig from "@api-gateway/utils/createConfig";
-import { generateToken } from "@api-gateway/utils/generate";
+
+import { UserService } from "@auth/services/user.service";
+import { StatusCode } from "@auth/utils/consts";
+import getConfig from "@auth/utils/createConfig";
+import { generateToken } from "@auth/utils/generate";
 import axios from "axios";
 import { Body, Get, Post, Query, Route, SuccessResponse } from "tsoa";
 
@@ -18,7 +18,7 @@ interface LoginRequestBody {
   password: string;
 }
 
-@Route("Auth")
+@Route("auth")
 export class UserController {
   private userService: UserService;
 
@@ -31,7 +31,7 @@ export class UserController {
   // Generate Verification Token & Save to its DB
   // Publish User Detail to Notification Service
   @SuccessResponse(StatusCode.Created, "Created")
-  @Post(ROUTE_PATHS.AUTH.SIGN_UP)
+  @Post("/signup")
   async SignUpWithEmail(@Body() requestBody: SignUpRequestBody): Promise<any> {
     try {
       const { username, email, password, role } = requestBody;
@@ -49,7 +49,7 @@ export class UserController {
   }
 
   @SuccessResponse(StatusCode.OK, "OK")
-  @Get(ROUTE_PATHS.AUTH.VERIFY)
+  @Get("/verify")
   async VerifyEmail(@Query() token: string) {
     try {
       const user = await this.userService.verifyEmail(token);
@@ -63,7 +63,7 @@ export class UserController {
   }
 
   @SuccessResponse(StatusCode.OK, "OK")
-  @Post(ROUTE_PATHS.AUTH.LOGIN)
+  @Post("/login")
   async LoginWithEmail(@Body() requestBody: LoginRequestBody): Promise<any> {
     try {
       const { email, password } = requestBody;
@@ -75,7 +75,7 @@ export class UserController {
   }
 
   @SuccessResponse(StatusCode.OK, "OK")
-  @Get(ROUTE_PATHS.AUTH.GOOGLE)
+  @Get("/google")
   // Initiates the Google Login flow
   async GoogleAuth() {
     const url = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${
@@ -87,7 +87,7 @@ export class UserController {
   }
 
   @SuccessResponse(StatusCode.OK, "OK")
-  @Get(ROUTE_PATHS.AUTH.GOOGLE_CALLBACK)
+  @Get("/google/callback")
   // Callback URL for handling the Google Login response
   async GoogleAuthCallback(@Query() code: string) {
     try {
@@ -148,7 +148,7 @@ export class UserController {
   }
 
   @SuccessResponse(StatusCode.OK, "OK")
-  @Get(ROUTE_PATHS.AUTH.FACEBOOK)
+  @Get("/facebook")
   async FacebookAuth() {
     try {
       const url = `https://www.facebook.com/v11.0/dialog/oauth?client_id=${
@@ -161,7 +161,7 @@ export class UserController {
   }
 
   @SuccessResponse(StatusCode.OK, "OK")
-  @Get(ROUTE_PATHS.AUTH.FACEBOOK)
+  @Get("/facebook/callback")
   async FacebookAuthCallback(@Query() code: string) {
     try {
       // Exchange authorization code for access token

@@ -3,8 +3,10 @@ import getConfig from "./utils/createConfig";
 import hpp from "hpp";
 import helmet from "helmet";
 import cors from "cors";
-import AuthRoute from "./routes/v1/user.routes";
 import { errorHandler } from "./middlewares/error-handler";
+import { RegisterRoutes } from "./routes/v1/routes";
+import swaggerUi from "swagger-ui-express";
+import * as swaggerDocument from "../public/swagger.json";
 
 // Create express app
 const app = express();
@@ -35,8 +37,17 @@ app.use((_req: Request, _res: Response, _next: NextFunction) => {
   console.log(_req.path, _req.method);
   _next();
 });
+
+app.use(express.static("public"));
+
+// serve your swagger.json file
+app.get("/docs/swagger.json", (_req: Request, res: Response) => {
+  res.sendFile("swagger.json", { root: "." });
+});
+
 //routes
-app.use("/v1/auth", AuthRoute);
+RegisterRoutes(app);
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // ========================
 // Global Error Handler

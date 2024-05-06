@@ -1,16 +1,11 @@
-import { UserRepository } from "@api-gateway/database/repository/user.repository";
+import { TokenRepository } from "@auth/database/repository/token.repository";
+import { UserRepository } from "@auth/database/repository/user.repository";
 import { UserSignUp } from "./@types/user.service.type";
-import {
-  generateToken,
-  generateVerifyToken,
-} from "@api-gateway/utils/generate";
-import DuplicateError from "@api-gateway/Errors/duplicat-error";
-// import BaseCustomError from "@api-gateway/Errors/base-custom-error";
-// import { StatusCode } from "@api-gateway/utils/consts";
-import APIError from "@api-gateway/Errors/api-error";
-import { TokenRepository } from "@api-gateway/database/repository/token.repository";
-import { StatusCode } from "@api-gateway/utils/consts";
-import { hashPassword, verifyPassword } from "@api-gateway/utils/password";
+import { hashPassword, verifyPassword } from "@auth/utils/password";
+import { generateToken, generateVerifyToken } from "@auth/utils/generate";
+import { StatusCode } from "@auth/utils/consts";
+import APIError from "@auth/Errors/api-error";
+import DuplicateError from "@auth/Errors/duplicat-error";
 
 export class UserService {
   private userRepo: UserRepository;
