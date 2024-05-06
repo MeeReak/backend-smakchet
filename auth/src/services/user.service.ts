@@ -32,11 +32,14 @@ export class UserService {
   async create(userDetail: UserSignUp) {
     try {
       //hashing password
-      const hasdPassword = await hashPassword(userDetail.password);
+      const hasdPassword =
+        userDetail.password && (await hashPassword(userDetail.password));
       //check if the email already signup
-      const existedUser = await this.userRepo.FindUserByEmail({
-        email: userDetail.email,
-      });
+      const existedUser =
+        userDetail.email &&
+        (await this.userRepo.FindUserByEmail({
+          email: userDetail.email,
+        }));
 
       if (existedUser) {
         if (!existedUser.isVerify) {
@@ -149,11 +152,12 @@ export class UserService {
         throw new APIError("User not exist", StatusCode.NotFound);
       }
 
-
-      const isPassword = await verifyPassword({
-        password: password,
-        hashPassword: existedUser.password,
-      });
+      const isPassword =
+        existedUser.password &&
+        (await verifyPassword({
+          password: password,
+          hashPassword: existedUser.password,
+        }));
 
       if (!isPassword) {
         throw new APIError(
@@ -167,6 +171,26 @@ export class UserService {
       );
 
       return jwtToken;
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+
+  async findUserByEmail({ email }: { email: string }) {
+    try {
+      return await this.userRepo.FindUserByEmail({ email });
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+
+  async updateUser({ id, data }: { id: string; data: any }) {
+    try {
+      const user = await this.userRepo.FindUserById({ id });
+      if (!user) {
+        throw new APIError("User does not exist", StatusCode.NotFound);
+      }
+      return await this.userRepo.UpdateUserById({ id: id, newDetail: data });
     } catch (error: unknown) {
       throw error;
     }

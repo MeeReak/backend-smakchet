@@ -6,8 +6,6 @@ import { StatusCode } from "@api-gateway/utils/consts";
 import { UserSignUp, UserUpdate } from "./@types/repository.type";
 
 export class UserRepository {
-
-
   async CreateUser(userDetail: UserSignUp) {
     try {
       return await UserModel.create(userDetail);
