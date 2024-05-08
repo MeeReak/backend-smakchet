@@ -59,7 +59,7 @@
 		"contact": {}
 	},
 	"paths": {
-		"/auth/signup": {
+		"/v1/auth/signup": {
 			"post": {
 				"operationId": "SignUpWithEmail",
 				"responses": {
@@ -86,7 +86,7 @@
 				}
 			}
 		},
-		"/auth/verify": {
+		"/v1/auth/verify": {
 			"get": {
 				"operationId": "VerifyEmail",
 				"responses": {
@@ -94,7 +94,19 @@
 						"description": "OK",
 						"content": {
 							"application/json": {
-								"schema": {}
+								"schema": {
+									"properties": {
+										"jwtToken": {},
+										"message": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"jwtToken",
+										"message"
+									],
+									"type": "object"
+								}
 							}
 						}
 					}
@@ -112,7 +124,7 @@
 				]
 			}
 		},
-		"/auth/login": {
+		"/v1/auth/login": {
 			"post": {
 				"operationId": "LoginWithEmail",
 				"responses": {
@@ -139,7 +151,7 @@
 				}
 			}
 		},
-		"/auth/google": {
+		"/v1/auth/google": {
 			"get": {
 				"operationId": "GoogleAuth",
 				"responses": {
@@ -158,7 +170,7 @@
 				"parameters": []
 			}
 		},
-		"/auth/google/callback": {
+		"/v1/auth/google/callback": {
 			"get": {
 				"operationId": "GoogleAuthCallback",
 				"responses": {
@@ -184,7 +196,7 @@
 				]
 			}
 		},
-		"/auth/facebook": {
+		"/v1/auth/facebook": {
 			"get": {
 				"operationId": "FacebookAuth",
 				"responses": {
@@ -203,7 +215,7 @@
 				"parameters": []
 			}
 		},
-		"/auth/facebook/callback": {
+		"/v1/auth/facebook/callback": {
 			"get": {
 				"operationId": "FacebookAuthCallback",
 				"responses": {

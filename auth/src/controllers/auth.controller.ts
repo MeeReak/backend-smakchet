@@ -1,4 +1,3 @@
-
 import { UserService } from "@auth/services/user.service";
 import { StatusCode } from "@auth/utils/consts";
 import getConfig from "@auth/utils/createConfig";
@@ -18,7 +17,7 @@ interface LoginRequestBody {
   password: string;
 }
 
-@Route("auth")
+@Route("v1/auth")
 export class UserController {
   private userService: UserService;
 
@@ -41,8 +40,9 @@ export class UserController {
         password,
         role,
       });
-      await this.userService.saveVerifyToken({ id: user.id });
-      return user;
+      const token = await this.userService.saveVerifyToken({ id: user.id });
+
+      return { message: "sucess", token };
     } catch (error: unknown) {
       throw error;
     }
@@ -56,7 +56,7 @@ export class UserController {
 
       const jwtToken = await generateToken(user.id, user.username);
 
-      return jwtToken;
+      return { message: "sucess", jwtToken };
     } catch (error: unknown) {
       throw error;
     }
@@ -68,7 +68,9 @@ export class UserController {
     try {
       const { email, password } = requestBody;
 
-      return await this.userService.login({ email, password });
+      const jwtToken = await this.userService.login({ email, password });
+
+      return { message: "sucess", jwtToken };
     } catch (error: unknown) {
       throw error;
     }
