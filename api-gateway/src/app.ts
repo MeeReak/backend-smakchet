@@ -1,14 +1,16 @@
-import express, { Request, Response } from "express";
+import express, { NextFunction, Request, Response } from "express";
 import getConfig from "./utils/createConfig";
 import compression from "compression";
 import cookieSession from "cookie-session";
 import hpp from "hpp";
 import helmet from "helmet";
 import cors from "cors";
-// import { applyRateLimit } from "./middlewares/rate-limits";
+import { applyRateLimit } from "./middlewares/rate-limits";
 import unless from "./middlewares/unless-route";
 import { verifyUser } from "./middlewares/auth-middleware";
-import { createProxyMiddleware } from "http-proxy-middleware";
+import applyProxy from "./middlewares/proxy";
+import { logger } from "./utils/logger";
+import { StatusCode } from "./utils/consts";
 
 // Create express app
 const app = express();
@@ -51,7 +53,7 @@ app.use(
 );
 
 // Apply Limit Request
-// applyRateLimit(app);
+applyRateLimit(app);
 
 // Hide Express Server Information
 app.disable("x-powered-by");
@@ -59,24 +61,20 @@ app.disable("x-powered-by");
 // ===================
 // JWT Middleware
 // ===================
-app.use(unless('/v1/auth', verifyUser));
-
+app.use(unless("/v1/auth", verifyUser));
 
 // ===================
 // Proxy Middleware
 // ===================
-app.use("/Hi",createProxyMiddleware({
-  target: "http://localhost:3005/api/auth/",
-  pathRewrite:{
-    "^Hi": ""
-  }
-}))
-
-
+applyProxy(app);
 
 //routes
-app.get("/", (_req: Request, res: Response) => {
-  res.json({ heko: "Hello World" });
+app.use("*", (req: Request, res: Response, _next: NextFunction) => {
+  const fullUrl = `${req.protocol}://${req.get("host")}${req.originalUrl}`;
+  logger.error(`${fullUrl} endpoint does not exist`);
+  res
+    .status(StatusCode.NotFound)
+    .json({ message: "The endpoint called does not exist." });
 });
 
 export default app;

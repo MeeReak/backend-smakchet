@@ -1,4 +1,4 @@
-import express, { NextFunction, Request, Response } from "express";
+import express, {  NextFunction, Request, Response } from "express";
 import getConfig from "./utils/createConfig";
 import hpp from "hpp";
 import helmet from "helmet";
@@ -39,6 +39,7 @@ app.use((_req: Request, _res: Response, _next: NextFunction) => {
 });
 
 app.use(express.static("public"));
+RegisterRoutes(app);
 
 // serve your swagger.json file
 app.get("/docs/swagger.json", (_req: Request, res: Response) => {
@@ -46,7 +47,6 @@ app.get("/docs/swagger.json", (_req: Request, res: Response) => {
 });
 
 //routes
-RegisterRoutes(app);
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // ========================

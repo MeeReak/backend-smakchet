@@ -18,7 +18,7 @@ mongoose
   .then(() => {
     //listen for requests
     app.listen(config.port, () => {
-      console.log("Connect to mongose DB & Listen on port 3000");
+      console.log("Connect to mongose DB & Listen on port 3001");
     });
   })
   .catch((error: any | unknown) => {

@@ -147,6 +147,13 @@ export class UserService {
         throw new APIError("User not exist", StatusCode.NotFound);
       }
 
+      if (!existedUser.isVerify) {
+        throw new APIError(
+          "Please Verify with the token that we sent!!",
+          StatusCode.NotFound
+        );
+      }
+
       const isPassword =
         existedUser.password &&
         (await verifyPassword({
