@@ -43,6 +43,7 @@ export default class NodemailerEmailApi implements EmailApi {
         },
       });
 
+      console.log(template);
       await email.send({
         template: path.join(__dirname, '../../src/emails', template),
         message: {
@@ -54,6 +55,7 @@ export default class NodemailerEmailApi implements EmailApi {
       logger.info(`Email send successfully.`);
     } catch (error) {
       logger.error(`NotificationService SendMail() method error: ${error}`);
+      console.log(error);
     }
   }
 }

@@ -35,7 +35,6 @@ export async function startQueue(): Promise<void> {
     const emailChannel: Channel = (await createQueueConnection()) as Channel;
     await consumeAuthEmailMessages(emailChannel);
   } catch (error) {
-    throw error
+    throw error;
   }
-
 }
