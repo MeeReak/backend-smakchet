@@ -1,11 +1,11 @@
-import express, {  NextFunction, Request, Response } from "express";
+import express, { NextFunction, Request, Response } from "express";
 import getConfig from "./utils/createConfig";
 import hpp from "hpp";
 import helmet from "helmet";
 import cors from "cors";
 import { errorHandler } from "./middlewares/error-handler";
 import { RegisterRoutes } from "./routes/v1/routes";
-import swaggerUi from "swagger-ui-express";
+import swaggerUi from "swagger-ui-express"
 import * as swaggerDocument from "../public/swagger.json";
 
 // Create express app

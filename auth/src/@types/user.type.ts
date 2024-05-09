@@ -8,3 +8,9 @@ export interface UserProps {
   facebookId?: string;
   profile?: string;
 }
+
+export interface IAuthUserMessageDetails {
+  username?: string;
+  email?: string;
+  type?: string;
+}
