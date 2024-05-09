@@ -1,3 +1,5 @@
+import { publishDirectMessage } from "@auth/queues/auth.producer";
+import { authChannel } from "@auth/server";
 import { UserService } from "@auth/services/user.service";
 import { StatusCode } from "@auth/utils/consts";
 import getConfig from "@auth/utils/createConfig";
@@ -41,6 +43,21 @@ export class UserController {
         role,
       });
       const token = await this.userService.saveVerifyToken({ id: user.id });
+
+      const messageDetails = {
+        username: user.username,
+        receiverEmail: user.email,
+        verifyLink: `${token.token}`,
+        template: "verifyEmail",
+      };
+
+      await publishDirectMessage(
+        authChannel,
+        "smackchet-email-notification",
+        "auth-email",
+        JSON.stringify(messageDetails),
+        "Verify email message has been sent to notification service"
+      );
 
       return { message: "sucess", token };
     } catch (error: unknown) {

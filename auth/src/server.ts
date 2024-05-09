@@ -3,8 +3,11 @@ import fs from "fs";
 import mongoose from "mongoose";
 import path from "path";
 import getConfig from "./utils/createConfig";
+import { Channel } from "amqplib";
 
 const config = getConfig();
+
+export let authChannel: Channel;
 
 // READ FILE JWT PUBLIC KEY FIRST
 export const privateKey = fs.readFileSync(
