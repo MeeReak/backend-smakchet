@@ -20,7 +20,7 @@ export async function consumeAuthEmailMessages(
       channel = (await createQueueConnection()) as Channel;
     }
 
-    const exchangeName = 'microsample-email-notification';
+    const exchangeName = 'smackchet-email-notification';
     const routingKey = 'auth-email';
     const queueName = 'auth-email-queue';
 
@@ -29,18 +29,21 @@ export async function consumeAuthEmailMessages(
       durable: true,
       autoDelete: false,
     });
+
     await channel.bindQueue(queue.queue, exchangeName, routingKey);
 
     channel.consume(queue.queue, async (msg: ConsumeMessage | null) => {
-      const { receiverEmail, username, verifyLink, resetLink, template } =
-        JSON.parse(msg!.content.toString());
+      const { receiverEmail, username, verifyLink, template } = JSON.parse(
+        msg!.content.toString()
+      );
+
+      console.log(receiverEmail, username, verifyLink, template);
 
       const locals: IEmailLocals = {
         appLink: `${getConfig().clientUrl}`,
         appIcon: ``,
         username,
-        verifyLink,
-        resetLink,
+        verifyLink: `http://localhost:3001/v1/auth/verify?token=${verifyLink}`,
       };
 
       const emailUserSender = EmailSender.getInstance();
