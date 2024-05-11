@@ -59,6 +59,8 @@ export class UserController {
         "Verify email message has been sent to notification service"
       );
 
+      
+
       return { message: "sucess", token };
     } catch (error: unknown) {
       throw error;
