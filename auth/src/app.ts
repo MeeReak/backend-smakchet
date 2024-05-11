@@ -5,8 +5,8 @@ import helmet from "helmet";
 import cors from "cors";
 import { errorHandler } from "./middlewares/error-handler";
 import { RegisterRoutes } from "./routes/v1/routes";
-import swaggerUi from "swagger-ui-express"
-import * as swaggerDocument from "../public/swagger.json";
+// import swaggerUi from "swagger-ui-express"
+// import * as swaggerDocument from "../public/swagger.json";
 
 // Create express app
 const app = express();
@@ -14,7 +14,7 @@ const app = express();
 const config = getConfig();
 
 // ===================
-// Security Middleware
+// Security Middleware 
 // ===================
 app.set("trust proxy", 1);
 app.use(hpp());
@@ -38,16 +38,16 @@ app.use((_req: Request, _res: Response, _next: NextFunction) => {
   _next();
 });
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
 RegisterRoutes(app);
 
 // serve your swagger.json file
-app.get("/docs/swagger.json", (_req: Request, res: Response) => {
-  res.sendFile("swagger.json", { root: "." });
-});
+// app.get("/docs/swagger.json", (_req: Request, res: Response) => {
+//   res.sendFile("swagger.json", { root: "." });
+// });
 
 //routes
-app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+// app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // ========================
 // Global Error Handler
