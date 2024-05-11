@@ -1,7 +1,6 @@
 {
   "name": "api-gateway",
   "version": "1.0.0",
-  "description": "",
   "main": "server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,6 +29,7 @@
     "express-rate-limit": "^7.2.0",
     "hpp": "^0.2.3",
     "http-proxy-middleware": "^3.0.0",
+    "init": "^0.1.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.3",
     "swagger-ui-express": "^5.0.0",
@@ -50,5 +50,6 @@
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0"
-  }
+  },
+  "description": ""
 }
