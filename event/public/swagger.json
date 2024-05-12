@@ -1,0 +1,286 @@
+{
+	"openapi": "3.0.0",
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"IUser": {
+				"properties": {
+					"authId": {
+						"type": "string"
+					},
+					"username": {
+						"type": "string"
+					},
+					"phoneNumber": {
+						"type": "string"
+					},
+					"profile": {
+						"type": "string"
+					},
+					"address": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"favorites": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"createdAt": {
+						"anyOf": [
+							{
+								"type": "string",
+								"format": "date-time"
+							},
+							{
+								"type": "string"
+							}
+						]
+					},
+					"role": {
+						"type": "string"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"FormSubmission": {
+				"properties": {
+					"label": {
+						"type": "string"
+					},
+					"fieldType": {
+						"type": "string"
+					},
+					"answers": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"label",
+					"fieldType",
+					"answers"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"EventDetail": {
+				"properties": {
+					"thumbnail": {
+						"type": "string"
+					},
+					"eventname": {
+						"type": "string"
+					},
+					"address": {
+						"properties": {
+							"lng": {
+								"type": "string"
+							},
+							"lat": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"lng",
+							"lat"
+						],
+						"type": "object"
+					},
+					"category": {
+						"type": "string",
+						"enum": [
+							"Sport",
+							"Education",
+							"Workshop",
+							"Charity"
+						]
+					},
+					"viewer": {
+						"type": "number",
+						"format": "double"
+					},
+					"description": {
+						"type": "string"
+					},
+					"Date": {
+						"properties": {
+							"endTime": {
+								"type": "string"
+							},
+							"startTime": {
+								"type": "string"
+							},
+							"endDate": {
+								"type": "string",
+								"format": "date-time"
+							},
+							"startDate": {
+								"type": "string",
+								"format": "date-time"
+							}
+						},
+						"type": "object"
+					},
+					"requirement": {
+						"properties": {
+							"timeCommitment": {
+								"type": "string"
+							},
+							"skill": {
+								"type": "string"
+							},
+							"language": {
+								"type": "string"
+							},
+							"age": {
+								"type": "string"
+							}
+						},
+						"type": "object"
+					},
+					"createdAt": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"formSubmission": {
+						"items": {
+							"$ref": "#/components/schemas/FormSubmission"
+						},
+						"type": "array"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			}
+		},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "user",
+		"version": "1.0.0",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {}
+	},
+	"paths": {
+		"/v1/user": {
+			"post": {
+				"operationId": "CreateUser",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"User"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IUser"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/v1/user/{userId}": {
+			"put": {
+				"operationId": "UpdateProfile",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"User"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "userId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IUser"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/v1/events": {
+			"post": {
+				"operationId": "CreateEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Event"
+				],
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/EventDetail"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}

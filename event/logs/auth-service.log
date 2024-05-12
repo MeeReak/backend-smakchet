@@ -1,0 +1,1103 @@
+[2024-05-11T06:59:13.346Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T06:59:13.348Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T06:59:13.351Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T06:59:24.011Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T06:59:24.012Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T06:59:24.015Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T06:59:41.897Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T06:59:41.900Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T06:59:41.903Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T06:59:52.765Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T06:59:52.768Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T06:59:52.772Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:01:03.690Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:01:03.692Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:01:03.695Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:01:12.749Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:01:12.752Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:01:12.757Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:01:18.238Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:01:18.240Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:01:18.243Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:01:30.223Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:01:30.225Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:01:30.228Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:01:38.383Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:01:38.386Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:01:38.389Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:01:55.901Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:01:55.904Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:01:55.906Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:02:20.454Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:02:20.458Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:02:20.462Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:02:38.666Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:02:38.669Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:02:38.673Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:03:01.757Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:03:01.759Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:03:01.761Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:05:37.128Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:05:37.132Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:05:37.136Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:07:24.376Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:07:24.401Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:07:24.432Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:10:01.869Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:10:01.873Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:10:01.876Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:10:03.353Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:10:03.355Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:10:52.764Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:12:42.765Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:12:42.767Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:12:42.771Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:12:42.778Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:13:43.766Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:13:43.769Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:13:43.769Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:13:43.772Z] [32minfo[39m: 	[32mServer is listening on port: 3000[39m
+[2024-05-11T07:13:57.036Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:13:57.038Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:13:57.041Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:14:09.551Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:14:09.553Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:16:03.893Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:16:03.897Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:16:03.902Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:16:16.663Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:16:16.665Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:16:16.668Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:16:30.899Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:16:30.902Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:16:30.905Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:17:02.892Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:17:02.896Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:17:02.899Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:17:51.418Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:17:51.421Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:17:51.424Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:18:29.041Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:18:29.044Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:18:29.048Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:20:24.165Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:20:24.169Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:20:24.174Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:21:41.176Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:21:41.182Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:21:41.189Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:21:59.109Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:21:59.114Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:21:59.120Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:22:48.625Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:22:48.628Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:22:48.631Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:30:21.638Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:30:21.642Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:30:21.645Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:30:50.082Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:30:50.086Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:30:50.090Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:31:08.762Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:31:08.767Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:31:08.771Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:31:24.457Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:31:24.461Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:31:24.467Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:32:32.329Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:32:32.332Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:32:32.335Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:33:18.066Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:33:18.068Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:33:36.837Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:33:36.839Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:33:52.636Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:33:52.637Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:35:20.499Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:35:20.501Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:35:20.504Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:35:44.015Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:35:44.018Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:37:30.692Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:37:30.694Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:37:30.697Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:38:10.302Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:38:10.306Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:38:10.309Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:38:28.343Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:38:28.345Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:38:28.348Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:38:42.844Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:38:42.862Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:38:42.866Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:39:20.447Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:39:20.450Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:39:20.452Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:39:45.951Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:39:45.953Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:39:45.956Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:39:55.471Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:39:55.475Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:39:55.477Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:40:14.727Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:40:14.729Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:40:14.731Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:40:15.857Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:15.866Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:40:26.995Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:26.999Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:40:27.008Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:27.011Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:40:27.071Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:27.071Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:27.073Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:27.074Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:40:27.074Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:40:27.077Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:40:27.078Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:40:27.079Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:41:05.872Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:41:05.874Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:41:05.879Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:41:15.976Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:41:15.989Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:44:31.606Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T07:44:31.609Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T07:44:31.612Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T07:44:52.051Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:44:52.136Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:56:43.647Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:56:43.683Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:57:30.499Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:57:30.502Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T07:58:38.668Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T07:58:38.670Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:00:38.532Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:00:38.534Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:01:43.537Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:01:43.762Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:02:33.356Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:02:33.360Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:02:33.364Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:02:55.487Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:02:55.491Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:02:55.494Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:13:44.612Z] [32minfo[39m: 	[32mMongoDB disconnected[39m
+[2024-05-11T08:14:22.023Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:14:22.030Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:14:22.036Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:14:36.251Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:14:36.293Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:14:36.303Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:14:43.898Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:14:43.901Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:14:43.904Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:14:54.940Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:14:54.941Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:14:54.944Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:17:35.567Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:17:35.569Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:17:35.573Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:17:37.652Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:17:37.657Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:17:43.735Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:17:43.743Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:18:46.926Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:18:46.928Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:19:16.325Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:19:16.347Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:20:05.275Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T08:20:05.277Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T08:20:05.280Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T08:20:06.913Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:20:06.971Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:20:40.221Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:20:40.223Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:20:54.673Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:20:54.675Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T08:21:49.246Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T08:21:49.248Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:04:29.450Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:04:29.469Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:04:31.915Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:04:31.916Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:04:39.697Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:04:39.698Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:05:11.547Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:05:11.549Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:05:11.553Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:05:13.464Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:05:13.468Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:05:40.358Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:05:40.360Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:05:48.128Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:05:48.129Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:06:42.224Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:06:42.298Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:10:20.127Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:10:20.142Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:11:07.181Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:11:07.183Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:13:05.588Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:13:05.591Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:14:11.263Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:14:11.539Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:15:02.110Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:15:02.177Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:16:48.739Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:16:48.742Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:16:48.745Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:18:09.692Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:18:09.695Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:18:09.698Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:18:24.822Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:18:24.824Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:18:24.827Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:18:29.460Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:18:29.467Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:19:30.868Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:19:30.872Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:19:58.642Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:19:58.644Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:19:58.647Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:20:00.212Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:20:00.228Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:20:59.093Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:20:59.100Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:21:26.569Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:21:26.631Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:21:59.950Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:21:59.954Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:23:34.092Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:23:34.098Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:23:34.104Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:23:35.359Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:23:35.381Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:24:26.413Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:24:26.417Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:24:26.421Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:25:59.966Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:25:59.970Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:25:59.975Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:26:01.317Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:26:01.335Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:26:22.694Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:26:22.697Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:26:22.700Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:26:26.985Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:26:27.007Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:27:01.589Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:27:01.592Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:27:01.596Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:27:03.116Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:27:03.166Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:27:38.192Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:27:38.195Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:27:38.199Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:28:31.031Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:28:31.034Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:28:31.037Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:28:35.194Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:28:35.219Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:31:21.230Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:31:21.238Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:31:21.245Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:33:35.547Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:33:35.550Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:33:35.553Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:34:05.392Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:34:05.395Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:34:05.401Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:34:08.091Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:34:08.104Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:34:24.829Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:34:24.833Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:34:24.837Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:34:39.510Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:34:39.522Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-11T10:37:23.956Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:37:23.959Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:37:23.963Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-11T10:37:25.794Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-11T10:37:25.808Z] [31merror[39m: 	[31munhandled error[39m
+[2024-05-11T10:38:10.795Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-11T10:38:10.797Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-11T10:38:10.800Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:39:41.977Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:39:41.980Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:39:41.987Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:40:49.121Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:40:49.243Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:41:15.531Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:41:15.537Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:41:33.161Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:41:33.296Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:42:41.153Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:42:41.156Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:42:41.160Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:43:25.829Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:43:25.834Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:43:25.841Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:44:48.008Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:44:48.093Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:47:04.327Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:47:04.329Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:48:45.265Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:48:45.267Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:48:45.270Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:50:39.611Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:50:39.616Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:53:19.138Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:53:19.223Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:53:34.174Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:53:34.175Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:53:52.015Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:53:52.088Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:54:20.815Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:54:20.819Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:54:20.823Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:54:24.019Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:54:24.178Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:54:51.147Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:54:51.148Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:55:06.888Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:55:06.890Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:55:06.892Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:55:13.150Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:55:13.153Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:56:11.282Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:56:11.285Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:56:11.289Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:56:12.859Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:56:12.863Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:56:17.946Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:56:17.947Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:56:44.937Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:56:44.942Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:56:44.948Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:57:00.393Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:57:00.395Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:57:00.398Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:57:01.875Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:57:01.879Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:57:55.660Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:57:55.662Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:57:55.665Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:57:57.488Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:57:57.491Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:59:13.509Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T05:59:13.512Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T05:59:13.516Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T05:59:24.984Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:59:24.988Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T05:59:35.137Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T05:59:35.222Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:00:04.734Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:00:04.807Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:01:47.831Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:01:47.836Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:01:47.842Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:01:49.483Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:01:49.553Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:02:10.042Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:02:10.043Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:02:48.409Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:02:48.411Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:02:48.413Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:02:53.888Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:02:53.893Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:03:12.386Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:03:12.390Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:03:12.395Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:03:51.771Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:03:51.775Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:03:51.779Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:03:52.690Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:03:52.695Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:04:03.670Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:04:03.672Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:05:37.887Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:05:38.745Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:05:48.088Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:05:48.090Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:10:21.480Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:10:21.487Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:10:21.494Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:10:23.273Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:10:23.356Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:11:32.909Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:11:32.912Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:11:35.812Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:11:35.814Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:11:51.661Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:11:51.763Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:12:24.020Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T06:12:24.182Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T06:14:45.329Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:14:45.335Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:14:45.339Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:15:18.535Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:15:18.539Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:15:18.542Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:15:46.807Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:15:46.811Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:15:46.815Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:16:53.819Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:16:53.820Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:16:53.823Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:17:09.564Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:17:09.568Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:17:09.571Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:17:47.094Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:17:47.096Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:17:47.099Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:17:57.763Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:17:57.766Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:17:57.770Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:18:10.813Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:18:10.815Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:18:10.819Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:19:43.539Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:19:43.541Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:19:43.546Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:19:52.548Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:19:52.550Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:19:52.553Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:20:32.176Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:20:32.178Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:20:32.180Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:21:15.146Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:21:15.149Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:21:15.152Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:21:29.480Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:21:29.483Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:21:29.486Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:21:42.271Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:21:42.274Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:21:42.278Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:21:49.563Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:21:49.568Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:21:49.574Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:33:26.983Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:33:26.987Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:33:26.992Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:33:48.869Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:33:48.872Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:33:48.876Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:34:53.655Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:34:53.659Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:34:53.664Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:35:12.252Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:35:12.255Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:35:12.258Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:35:40.624Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:35:40.627Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:35:40.631Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:35:59.458Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:35:59.460Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:35:59.463Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:36:35.415Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:36:35.432Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:36:35.475Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:36:51.005Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:36:51.008Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:36:51.011Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:37:14.334Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:37:14.338Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:37:14.344Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:37:27.676Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:37:27.679Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:37:27.683Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:37:35.995Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:37:35.998Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:37:36.002Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:37:42.811Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:37:42.813Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:37:42.816Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:38:03.445Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:38:03.449Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:38:03.453Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:38:20.980Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:38:20.982Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:38:20.986Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:38:34.292Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:38:34.295Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:38:34.299Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:38:47.099Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:38:47.101Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:38:47.103Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:39:35.440Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:39:35.445Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:39:35.449Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:40:16.407Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:40:16.410Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:40:16.413Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:42:01.351Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:42:01.354Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:42:01.358Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:42:06.768Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:42:06.771Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:42:06.774Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:42:17.403Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:42:17.405Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:42:17.408Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:42:31.665Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:42:31.669Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:42:31.673Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:42:59.139Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:42:59.141Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:42:59.144Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:43:17.807Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:43:17.809Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:43:17.811Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:43:30.456Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:43:30.458Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:43:30.462Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:43:36.446Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:43:36.448Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:43:36.450Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:44:24.367Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:44:24.370Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:44:24.373Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:44:33.127Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:44:33.130Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:44:33.133Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:45:28.708Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:45:28.710Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:45:28.713Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:45:49.907Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:45:49.910Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:45:49.913Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:46:07.119Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:46:07.121Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:46:07.125Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:50:02.793Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:50:02.796Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:50:02.799Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:58:39.302Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:58:39.305Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:58:39.308Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T06:59:34.118Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T06:59:34.121Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T06:59:34.124Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:05:26.669Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:05:26.672Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:05:26.675Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:05:42.335Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:05:42.337Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:05:42.340Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:08:01.313Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:08:01.315Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:08:01.318Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:08:09.580Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:08:09.582Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:08:09.585Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:09:06.474Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:09:06.477Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:09:06.481Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:09:18.145Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:09:18.147Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:09:18.150Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:09:45.445Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:09:45.449Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:09:45.451Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:10:04.788Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:10:04.791Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:10:04.807Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:10:49.461Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:10:49.464Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:10:49.468Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:12:17.160Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:12:17.163Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:12:17.168Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:12:49.355Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:12:49.357Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:12:49.360Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:13:31.505Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:13:31.510Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:13:31.514Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:13:44.428Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:13:44.431Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:13:44.434Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:13:53.529Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:13:53.534Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:13:53.537Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:14:14.011Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:14:14.014Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:14:14.017Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:14:20.562Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:14:20.564Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:14:20.566Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:15:25.187Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:15:25.189Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:15:25.192Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:15:44.628Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:15:44.633Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:15:44.638Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:16:04.190Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:16:04.193Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:16:04.196Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:16:14.546Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:16:14.549Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:16:14.552Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:16:27.632Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:16:27.635Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:16:27.639Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:16:59.100Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:16:59.103Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:16:59.107Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:17:13.048Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:17:13.050Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:17:13.053Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:17:40.315Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:17:40.318Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:17:40.323Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:17:54.981Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:17:54.987Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:17:54.991Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:19:12.644Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:19:12.647Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:19:12.650Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:19:20.219Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:19:20.222Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:19:20.227Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:29:45.862Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:29:45.864Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:29:45.867Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:30:04.240Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:30:04.242Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:30:04.245Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:30:21.751Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:30:21.753Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:30:21.756Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:31:11.390Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:31:11.394Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:31:11.398Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:31:17.043Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:31:17.047Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:31:17.050Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:31:40.668Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:31:40.671Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:31:40.675Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:31:50.491Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:31:50.494Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:31:50.498Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:32:14.758Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:32:14.763Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:32:14.766Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:32:24.054Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:32:24.058Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:32:24.062Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:32:46.180Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:32:46.182Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:32:46.185Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:33:20.996Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:33:20.998Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:33:21.001Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:33:50.374Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:33:50.376Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:33:50.379Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:34:03.718Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:34:03.721Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:34:03.725Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:34:26.523Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:34:26.526Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:34:26.531Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:34:36.595Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:34:36.598Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:34:36.602Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:35:25.582Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:35:25.585Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:35:25.587Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:36:09.886Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:36:09.888Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:36:09.891Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:36:22.597Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:36:22.601Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:36:22.604Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:36:42.359Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:36:42.361Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:36:42.363Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:36:59.377Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:36:59.380Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:36:59.386Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:37:17.902Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:37:17.905Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:37:17.908Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:37:28.324Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:37:28.326Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:37:28.329Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:42:30.176Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:42:30.179Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:42:30.183Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:42:41.392Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:42:41.395Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:42:41.399Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:42:55.164Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:42:55.166Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:42:55.169Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:44:10.034Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:44:10.038Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:44:10.041Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:44:32.929Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:44:32.932Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:44:32.936Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:44:51.997Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:44:52.000Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:44:52.004Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:45:09.275Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:45:09.278Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:45:09.281Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:45:58.685Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:45:58.689Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:45:58.693Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:46:55.468Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:46:55.472Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:46:55.476Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:47:07.158Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:47:07.160Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:47:07.163Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:47:41.863Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:47:41.868Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:47:41.872Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:48:12.580Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:48:12.583Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:48:12.587Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:50:38.111Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:50:38.114Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:50:38.118Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:54:17.826Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:54:17.829Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:54:17.832Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:55:02.877Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:55:02.880Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:55:02.883Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:55:15.028Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:55:15.030Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:55:15.033Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:55:55.213Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:55:55.215Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:55:55.219Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:56:06.315Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:56:06.317Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:56:06.320Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:56:20.888Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:56:20.892Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:56:20.895Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:57:00.836Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:57:00.839Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:57:00.842Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:57:43.878Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:57:43.881Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:57:43.885Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:57:52.861Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:57:52.865Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:57:52.869Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:58:41.059Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:58:41.062Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:58:41.065Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:58:52.405Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:58:52.408Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:58:52.412Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T07:59:26.196Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T07:59:26.200Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T07:59:26.203Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:00:02.240Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:00:02.242Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:00:02.246Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:00:14.270Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:00:14.273Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:00:14.276Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:00:24.423Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:00:24.430Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:00:24.438Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:01:06.276Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:01:06.280Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:01:06.284Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:01:19.659Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:01:19.665Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:01:19.671Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:01:58.043Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:01:58.046Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:01:58.049Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:02:15.903Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:02:15.905Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:02:15.908Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:02:39.736Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:02:39.738Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:02:39.742Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:03:23.658Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:03:23.664Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:03:23.670Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:03:41.091Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:03:41.097Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:03:41.104Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:04:02.663Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:04:02.667Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:04:02.670Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:04:22.089Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:04:22.094Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:04:22.098Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:04:41.102Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:04:41.108Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:04:41.113Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:05:01.613Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:05:01.619Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:05:01.626Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:06:05.625Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:06:05.631Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:06:05.638Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:09:17.473Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:09:17.476Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:09:17.480Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:11:04.984Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:11:04.991Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:11:51.457Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:11:51.459Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:12:20.475Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:12:20.478Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:12:20.608Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:12:20.609Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:12:20.612Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:12:20.614Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:12:20.615Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:12:20.616Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:12:20.736Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:12:20.863Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:13:25.292Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:13:25.294Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:13:25.299Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:13:32.618Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:13:32.621Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:13:32.625Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:13:35.435Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:13:35.438Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:14:32.348Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:14:32.353Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:29.277Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:15:29.280Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:15:29.283Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:15:29.495Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:29.498Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:29.578Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:29.580Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:29.582Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:29.583Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:29.584Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:29.585Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:29.586Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:29.587Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:30.003Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:30.005Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:35.422Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:35.425Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:35.544Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:35.546Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:35.547Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:35.548Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:35.549Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:35.551Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:35.552Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:35.553Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:35.686Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:35.688Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:38.865Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:38.867Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:38.946Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:38.947Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:38.948Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:38.949Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:38.951Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:38.952Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:38.954Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:38.955Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:42.354Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:42.360Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:44.917Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:44.919Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:44.986Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:44.988Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:44.990Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:44.991Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:44.993Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:44.995Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:44.996Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:44.997Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:15:56.142Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:15:56.149Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:16:43.055Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:16:43.057Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:16:43.141Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:16:43.142Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:16:43.143Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:16:43.144Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:16:43.144Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:16:43.146Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:16:43.147Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:16:43.147Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:16:43.346Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:16:43.347Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:17:37.050Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:17:37.051Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:17:48.767Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:17:48.769Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:18:31.741Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:18:31.745Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:18:31.750Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:18:45.717Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:18:45.721Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:18:45.725Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:18:45.764Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:18:45.771Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:18:45.840Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:18:45.841Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:18:45.843Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:18:45.844Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:18:45.845Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:18:45.847Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:18:45.848Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:18:45.848Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:20:19.714Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:20:19.719Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:20:19.723Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:22:54.239Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:22:54.244Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:22:54.251Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:23:03.665Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:23:03.672Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:23:03.678Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:23:17.847Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:23:17.850Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:23:17.852Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:23:45.774Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:23:45.776Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:23:45.779Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:23:52.591Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:23:52.597Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:23:52.604Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:24:07.196Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:24:07.201Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:24:07.207Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:24:34.462Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:24:34.466Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:24:34.470Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:26:17.071Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:26:17.076Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:26:17.081Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:26:56.800Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:26:56.803Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:26:56.807Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:30:09.835Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:30:09.839Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:30:09.843Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T08:30:45.081Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T08:30:45.267Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T08:32:35.011Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T08:32:35.017Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T08:32:35.024Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T09:19:43.284Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:19:43.288Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T09:19:43.293Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T09:19:55.025Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:19:55.029Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T09:19:55.034Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T09:19:59.837Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:20:17.865Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:20:17.870Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T09:20:17.873Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T09:21:04.941Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:21:05.206Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:44:27.137Z] [32minfo[39m: 	[32mMongoDB disconnected[39m
+[2024-05-12T09:44:37.596Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:53:43.668Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:53:43.671Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T09:53:43.675Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T09:54:52.772Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:54:52.956Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:55:47.621Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:55:47.624Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:56:29.150Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T09:56:29.153Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T09:56:29.156Z] [31merror[39m: 	[31munhandled error[39m
+[2024-05-12T09:56:29.157Z] [32minfo[39m: 	[32mserver closed![39m
+[2024-05-12T09:59:14.166Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:14.169Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:14.170Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:14.171Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:14.172Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:14.177Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:14.178Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:14.179Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:18.056Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:18.074Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:20.909Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:20.922Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:21.339Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:21.339Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:21.340Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:21.341Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T09:59:21.342Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:21.343Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:21.343Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T09:59:21.344Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:03:33.390Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:03:33.392Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:03:33.395Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T10:03:46.165Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:03:46.167Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:03:46.170Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T10:03:50.134Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:03:50.137Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:03:50.223Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:03:50.226Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:03:50.231Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:03:50.233Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:03:50.234Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:03:50.235Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:03:50.236Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:03:50.237Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:03:50.717Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:03:50.718Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:21.505Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:04:21.507Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:04:21.511Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T10:04:21.899Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:21.904Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:50.672Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:04:50.674Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:04:50.677Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T10:04:50.759Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:50.762Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:50.830Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:50.831Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:50.832Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:50.833Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:50.834Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:50.835Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:50.931Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:50.932Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:04:52.202Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:04:52.203Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:10.284Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:05:10.288Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:05:10.292Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T10:05:37.692Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:05:37.696Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:37.741Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:05:37.743Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:05:37.744Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:05:37.744Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:05:37.745Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:37.747Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:37.748Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:37.749Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:37.891Z] [34mdebug[39m: 	[34mrequest received: [39m
+[2024-05-12T10:05:37.892Z] [32minfo[39m: 	[32mresponse sent[39m
+[2024-05-12T10:05:53.959Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:05:53.961Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:05:53.964Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
+[2024-05-12T10:55:39.708Z] [32minfo[39m: 	[32mMongoDB disconnected[39m
+[2024-05-12T10:55:49.964Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:57:44.185Z] [32minfo[39m: 	[32mMongoDB connected[39m
+[2024-05-12T10:57:44.191Z] [32minfo[39m: 	[32mSuccessfully connected to MongoDB[39m
+[2024-05-12T10:57:44.198Z] [32minfo[39m: 	[32mServer is listening on port: 3003[39m
