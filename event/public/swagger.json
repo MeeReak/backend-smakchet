@@ -7,53 +7,6 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
-			"IUser": {
-				"properties": {
-					"authId": {
-						"type": "string"
-					},
-					"username": {
-						"type": "string"
-					},
-					"phoneNumber": {
-						"type": "string"
-					},
-					"profile": {
-						"type": "string"
-					},
-					"address": {
-						"type": "string"
-					},
-					"description": {
-						"type": "string"
-					},
-					"email": {
-						"type": "string"
-					},
-					"favorites": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"createdAt": {
-						"anyOf": [
-							{
-								"type": "string",
-								"format": "date-time"
-							},
-							{
-								"type": "string"
-							}
-						]
-					},
-					"role": {
-						"type": "string"
-					}
-				},
-				"type": "object",
-				"additionalProperties": false
-			},
 			"FormSubmission": {
 				"properties": {
 					"label": {
@@ -178,75 +131,6 @@
 		"contact": {}
 	},
 	"paths": {
-		"/v1/user": {
-			"post": {
-				"operationId": "CreateUser",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {}
-							}
-						}
-					}
-				},
-				"tags": [
-					"User"
-				],
-				"security": [],
-				"parameters": [],
-				"requestBody": {
-					"required": true,
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/IUser"
-							}
-						}
-					}
-				}
-			}
-		},
-		"/v1/user/{userId}": {
-			"put": {
-				"operationId": "UpdateProfile",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {}
-							}
-						}
-					}
-				},
-				"tags": [
-					"User"
-				],
-				"security": [],
-				"parameters": [
-					{
-						"in": "path",
-						"name": "userId",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
-					}
-				],
-				"requestBody": {
-					"required": true,
-					"content": {
-						"application/json": {
-							"schema": {
-								"$ref": "#/components/schemas/IUser"
-							}
-						}
-					}
-				}
-			}
-		},
 		"/v1/events": {
 			"post": {
 				"operationId": "CreateEvent",
@@ -275,6 +159,82 @@
 						}
 					}
 				}
+			}
+		},
+		"/v1/events/{id}": {
+			"put": {
+				"operationId": "UpdateEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Event"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/EventDetail"
+							}
+						}
+					}
+				}
+			},
+			"get": {
+				"operationId": "DeleteEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"message": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"message"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Event"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
 			}
 		}
 	},
