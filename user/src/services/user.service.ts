@@ -1,20 +1,29 @@
-import  UserRepository  from "../databases/repositories/user.reposities";
+
+import { IUser } from "@user/databases/@types/user.interface";
+import UserRepository from "../databases/repositories/user.reposities";
 
 export class UserServices {
-  public UserRepo: UserRepository;
+  public userRepo: UserRepository;
   constructor() {
-    this.UserRepo = new UserRepository();
+    this.userRepo = new UserRepository();
   }
 
-  async updateUserProfile(userId:string, userProfileData:object):Promise<any>{
-
-      try{
-
-        return this.UserRepo.updateUserProfile(userId,userProfileData);
-
-      }catch(error:unknown | any){
-        throw error;
-      }
+  async createUser(userData: IUser) {
+    try {
+      return this.userRepo.createUser(userData);
+    } catch (error: unknown) {
+      throw error;
+    }
   }
 
+  async updateUserProfile(
+    userId: string,
+    userProfileData: IUser
+  ): Promise<any> {
+    try {
+      return this.userRepo.updateUserProfile(userId, userProfileData);
+    } catch (error: unknown | any) {
+      throw error;
+    }
+  }
 }

@@ -1,8 +1,17 @@
 
 import { logInit, logger } from "../src/utils/logger";
 import MongoDBConnector from "../src/databases/index";
-import getConfig from "../src/utils/config";
 import app from "./app";
+import getConfig from "./utils/config";
+import path from "path";
+import fs from "fs"; 
+
+
+// READ FILE JWT PUBLIC KEY FIRST
+export const privateKey = fs.readFileSync(
+  path.join(__dirname, "../private_key.pem"),
+  "utf-8"
+);
 
 async function run() {
   try {
