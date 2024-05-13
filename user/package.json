@@ -16,7 +16,7 @@
     "helmet": "^7.1.0",
     "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.3",
+    "mongoose": "^8.3.4",
     "nodemon": "^3.1.0",
     "on-headers": "^1.0.2",
     "supertest": "^7.0.0",
@@ -40,7 +40,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.ts",
+    "start": "nodemon  --exec ts-node -r tsconfig-paths/register  src/server.ts",
     "gen:spec": "tsoa spec",
     "gen:routes": "tsoa routes",
     "gen:all": "npm run gen:spec && npm run gen:routes"

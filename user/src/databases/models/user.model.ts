@@ -2,30 +2,39 @@ import mongoose, { Schema } from "mongoose";
 
 const userSchema = new Schema(
   {
+    authId: { type: mongoose.Schema.Types.ObjectId },
     username: {
-      type: String
+      type: String,
     },
-    phoneNumber:{
-      type: String
+    role: {
+      type: String,
+      enum: ["Organizer", "Volunteer"],
     },
-    bio:{
-      type:String
+    email: { type: String, index: true },
+    phoneNumber: {
+      type: String,
     },
-    profile:{
-      type: String
+    favorites: [{ type: mongoose.Schema.Types.ObjectId, ref: "Post" }],
+    createdAt: { type: Date, default: Date.now() },
+    profile: {
+      type: String,
     },
-    facebookLink:{
-      type: String
+    address: {
+      type: String,
     },
-    address:{
-      type:String
+    description: {
+      type: String,
     },
-    description:{
-      type:String
-    }
+  },
+  {
+    toJSON: {
+      transform(_doc, ret) {
+        delete ret.authId;
+        delete ret.__v;
+      },
+    },
   }
 );
-
 const UserModel = mongoose.model("User", userSchema);
 
 export default UserModel;

@@ -1,9 +1,12 @@
 export interface IUser {
-  username    ?: string;
-  phoneNumber ?: string;
-  bio         ?: string;
-  profile     ?: string;
-  facebookLink?: string;
-  address     ?: string;
-  description ?: string;
+  authId?:string 
+  username?: string;
+  phoneNumber?: string;
+  profile?: string;
+  address?: string;
+  description?: string;
+  email?: string;
+  favorites?: string[];
+  createdAt?: Date | string;
+  role?:string
 }
