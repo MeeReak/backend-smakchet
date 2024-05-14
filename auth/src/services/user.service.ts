@@ -2,7 +2,7 @@ import { TokenRepository } from "@auth/database/repository/token.repository";
 import { UserRepository } from "@auth/database/repository/user.repository";
 import { UserSignUp } from "./@types/user.service.type";
 import { hashPassword, verifyPassword } from "@auth/utils/password";
-import { generateToken, generateVerifyToken } from "@auth/utils/generate";
+import { generateVerifyToken } from "@auth/utils/generate";
 import { StatusCode } from "@auth/utils/consts";
 import APIError from "@auth/Errors/api-error";
 import DuplicateError from "@auth/Errors/duplicat-error";
@@ -167,12 +167,7 @@ export class UserService {
         );
       }
 
-      const jwtToken = await generateToken(
-        existedUser.id,
-        existedUser.username
-      );
-
-      return jwtToken;
+      return existedUser;
     } catch (error: unknown) {
       throw error;
     }

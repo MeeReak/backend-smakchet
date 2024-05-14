@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import { randomBytes } from "crypto";
 import getConfig from "./createConfig";
 import { privateKey } from "@auth/server";
+import APIError from "@auth/Errors/api-error";
 
 export const generateVerifyToken = async () => {
   try {
@@ -11,22 +12,23 @@ export const generateVerifyToken = async () => {
   }
 };
 
-export const generateToken = async (id: string, username: string) => {
+export const generateToken = async (id: string, role: string) => {
   try {
     // JWT payload containing user information
     const payload = {
       userId: id,
-      username: username,
+      role: role,
     };
 
     // Generate and return the JWT
     const token = jwt.sign(payload, privateKey, {
-      expiresIn: parseInt(getConfig().jwtExpiresIn!),
+      expiresIn: getConfig().jwtExpiresIn!,
       algorithm: "RS256",
     });
-
+    
     return token;
   } catch (error: unknown) {
-    throw error;
+    console.log(error);
+    throw new APIError("Unable to generate signature from jwt");
   }
 };

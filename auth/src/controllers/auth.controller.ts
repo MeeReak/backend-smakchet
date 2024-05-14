@@ -1,9 +1,11 @@
+import APIError from "@auth/Errors/api-error";
 import { publishDirectMessage } from "@auth/queues/auth.producer";
 import { authChannel } from "@auth/server";
 import { UserService } from "@auth/services/user.service";
 import { StatusCode } from "@auth/utils/consts";
 import getConfig from "@auth/utils/createConfig";
 import { generateToken } from "@auth/utils/generate";
+import { logger } from "@auth/utils/logger";
 import axios from "axios";
 import { Body, Get, Post, Query, Route, SuccessResponse } from "tsoa";
 
@@ -17,6 +19,14 @@ interface SignUpRequestBody {
 interface LoginRequestBody {
   email: string;
   password: string;
+}
+
+interface userData {
+  authId: string;
+  username?: string;
+  email?: string;
+  createdAt?: Date | string;
+  role: string;
 }
 
 @Route("v1/auth")
@@ -59,9 +69,10 @@ export class UserController {
         "Verify email message has been sent to notification service"
       );
 
-      
-
-      return { message: "sucess", token };
+      return {
+        message: "Sign up successfully. Please verify your email.",
+        data: user,
+      };
     } catch (error: unknown) {
       throw error;
     }
@@ -73,9 +84,33 @@ export class UserController {
     try {
       const user = await this.userService.verifyEmail(token);
 
-      const jwtToken = await generateToken(user.id, user.username);
+      const userDetail = await this.userService.findUserByEmail({
+        email: user.email!,
+      });
 
-      return { message: "sucess", jwtToken };
+      if (!userDetail) {
+        logger.error(
+          `AuthController VerifyEmail() method error: user not found`
+        );
+        throw new APIError(
+          `Something went wrong`,
+          StatusCode.InternalServerError
+        );
+      }
+
+      let data: userData = {
+        authId: userDetail.id,
+        email: userDetail.email!,
+        username: userDetail.username,
+        createdAt: new Date(),
+        role: userDetail.role!,
+      };
+
+      const respone = await axios.post("http://localhost:3003/v1/user", data);
+    
+      const jwtToken = await generateToken(respone.data._id, user.role!);
+
+      return { message: "User verify email successfully", token: jwtToken };
     } catch (error: unknown) {
       throw error;
     }
@@ -87,9 +122,13 @@ export class UserController {
     try {
       const { email, password } = requestBody;
 
-      const jwtToken = await this.userService.login({ email, password });
+      const user = await this.userService.login({ email, password });
 
-      return { message: "sucess", jwtToken };
+      const respone = await axios.get(`http://localhost:3003/v1/user/{userId}?userId=${user.id}`)
+
+      const jwtToken = await generateToken(respone.data._id, respone.data.role);
+
+      return { message: "sucess", token: jwtToken };
     } catch (error: unknown) {
       throw error;
     }
