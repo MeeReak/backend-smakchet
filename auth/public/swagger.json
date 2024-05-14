@@ -63,7 +63,7 @@
 			"post": {
 				"operationId": "SignUpWithEmail",
 				"responses": {
-					"200": {
+					"201": {
 						"description": "Created",
 						"content": {
 							"application/json": {
@@ -96,13 +96,13 @@
 							"application/json": {
 								"schema": {
 									"properties": {
-										"jwtToken": {},
+										"token": {},
 										"message": {
 											"type": "string"
 										}
 									},
 									"required": [
-										"jwtToken",
+										"token",
 										"message"
 									],
 									"type": "object"

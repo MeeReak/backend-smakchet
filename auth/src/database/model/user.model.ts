@@ -46,6 +46,6 @@ const authSchema = new Schema(
   }
 );
 
-const UserModel = mongoose.model("User", authSchema);
+const UserModel = mongoose.model("Auth", authSchema);
 
 export default UserModel;
