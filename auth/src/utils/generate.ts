@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import { randomBytes } from "crypto";
-import getConfig from "./createConfig";
+//import getConfig from "./createConfig";
 import { privateKey } from "@auth/server";
 
 export const generateVerifyToken = async () => {
@@ -21,7 +21,7 @@ export const generateToken = async (id: string, username: string) => {
 
     // Generate and return the JWT
     const token = jwt.sign(payload, privateKey, {
-      expiresIn: parseInt(getConfig().jwtExpiresIn!),
+      expiresIn: "3d",
       algorithm: "RS256",
     });
 
