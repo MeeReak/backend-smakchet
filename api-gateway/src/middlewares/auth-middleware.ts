@@ -5,9 +5,9 @@ import { logger } from "@api-gateway/utils/logger";
 import { NextFunction, Request, Response } from "express";
 import { verify } from "jsonwebtoken";
 
-async function verifyUser(_req: Request, _res: Response, _next: NextFunction) {
+async function verifyUser(req: Request, _res: Response, _next: NextFunction) {
   try {
-    if (_req.session?.jwt) {
+    if (!req.session!.jwt) {
       logger.error(
         "Token is not available. Gateway Service verifyUser() method error"
       );
@@ -16,7 +16,8 @@ async function verifyUser(_req: Request, _res: Response, _next: NextFunction) {
         StatusCode.Unauthorized
       );
     }
-    await verify(_req.session?.jwt, publickey, { algorithms: ["RS256"] });
+
+    await verify(req.session?.jwt, publickey, { algorithms: ["RS256"] });
     _next();
   } catch (error) {
     _next(error);

@@ -6,11 +6,11 @@ import hpp from "hpp";
 import helmet from "helmet";
 import cors from "cors";
 import { applyRateLimit } from "./middlewares/rate-limits";
-import unless from "./middlewares/unless-route";
-import { verifyUser } from "./middlewares/auth-middleware";
 import applyProxy from "./middlewares/proxy";
 import { logger } from "./utils/logger";
 import { StatusCode } from "./utils/consts";
+import { verifyUser } from "./middlewares/auth-middleware";
+import unless from "./middlewares/unless-route";
 
 // Create express app
 const app = express();
@@ -26,7 +26,7 @@ app.use(
   cookieSession({
     name: "session",
     keys: [`${config.cookieSecretKeyOne}`, `${config.cookieSecretKeyTwo}`],
-    maxAge: 24 * 7 * 3600000,
+    maxAge: 24 * 3 * 3600000,
     secure: config.env !== "development", // update with value from config
     ...(config.env !== "development" && { sameSite: "none" }),
   })
