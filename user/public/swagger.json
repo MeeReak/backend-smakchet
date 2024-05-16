@@ -94,6 +94,24 @@
 						}
 					}
 				}
+			},
+			"get": {
+				"operationId": "ShowAllUser",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"User"
+				],
+				"security": [],
+				"parameters": []
 			}
 		},
 		"/v1/user/{userId}": {
@@ -133,6 +151,33 @@
 						}
 					}
 				}
+			},
+			"get": {
+				"operationId": "FindUserByAuthid",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"User"
+				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "userId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
 			}
 		}
 	},

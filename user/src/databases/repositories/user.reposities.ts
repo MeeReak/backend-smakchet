@@ -30,6 +30,23 @@ class UserRepository {
       throw Error(error);
     }
   }
+
+  async findUserByAuthId(authId: string) {
+    try {
+      const user = await UserModel.findOne({ authId });
+      return user;
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+
+  async showAllUser() {
+    try {
+      return await UserModel.find();
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
 }
 
 export default UserRepository;
