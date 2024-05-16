@@ -1,0 +1,15 @@
+FROM node:21-alpine3.18
+
+WORKDIR /app
+COPY package.json ./
+COPY tsconfig.json ./
+COPY src ./src
+COPY private_key.pem ./
+COPY /configs/.env /cinfigs/.env
+COPY /public/swagger.json /public/swagger.json
+RUN ls -a
+RUN npm install && npm install -g nodemon
+
+EXPOSE 3005
+
+CMD ["npm", "run", "start"]

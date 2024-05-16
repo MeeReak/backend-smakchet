@@ -1,11 +1,12 @@
 import { NextFunction, Request, Response } from "express";
 import { ZodSchema, ZodError } from "zod";
-import APIError from "@auth/Errors/api-error";
 import { StatusCode } from "../utils/consts";
+import APIError from "@application/errors/api-error";
 
 export const validateInput = (schema: ZodSchema) => {
   return (_req: Request, _res: Response, _next: NextFunction) => {
     try {
+      console.log(_req.body);
       schema.parse(_req.body);
       _next();
     } catch (error: any | unknown) {
