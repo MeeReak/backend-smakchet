@@ -7,8 +7,6 @@ export const verifyToken = (req: any, _res: any, next: any) => {
   if (!token) {
     throw new Error("Token not provided");
   }
-
-  console.log("token", token);
   try {
     const decodedToken = jwt.verify(token, privateKey, {
       algorithms: ["RS256"],

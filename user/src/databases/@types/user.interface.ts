@@ -1,5 +1,5 @@
 export interface IUser {
-  authId?:string 
+  authid?:string 
   username?: string;
   phoneNumber?: string;
   profile?: string;
