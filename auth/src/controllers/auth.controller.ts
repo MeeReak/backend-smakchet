@@ -44,7 +44,9 @@ export class UserController {
   @SuccessResponse(StatusCode.Created, "Created")
   @Post("/signup")
   async SignUpWithEmail(@Body() requestBody: SignUpRequestBody): Promise<any> {
+
     try {
+      console.log("hei")
       const { username, email, password, role } = requestBody;
       const user = await this.userService.create({
         username,

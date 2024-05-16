@@ -14,7 +14,7 @@ const app = express();
 const config = getConfig();
 
 // ===================
-// Security Middleware 
+// Security Middleware
 // ===================
 app.set("trust proxy", 1);
 app.use(hpp());
@@ -31,12 +31,13 @@ app.use(
 // Standard Middleware
 // =======================
 app.use(express.json({ limit: "10mb" }));
-app.use(express.urlencoded({ extended: true, limit: "200mb" }));
-app.use(express.static("public"));
 app.use((_req: Request, _res: Response, _next: NextFunction) => {
   console.log(_req.path, _req.method);
+  console.log(_req.body);
   _next();
 });
+app.use(express.urlencoded({ extended: true, limit: "200mb" }));
+app.use(express.static("public"));
 
 // app.use(express.static("public"));
 RegisterRoutes(app);

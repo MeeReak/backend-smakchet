@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 import { randomBytes } from "crypto";
-import getConfig from "./createConfig";
+// import getConfig from "./createConfig";
 import { privateKey } from "@auth/server";
 import APIError from "@auth/Errors/api-error";
 
@@ -22,7 +22,7 @@ export const generateToken = async (id: string, role: string) => {
 
     // Generate and return the JWT
     const token = jwt.sign(payload, privateKey, {
-      expiresIn: getConfig().jwtExpiresIn!,
+      expiresIn: "3d",
       algorithm: "RS256",
     });
     
