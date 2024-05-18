@@ -5,8 +5,8 @@ import helmet from "helmet";
 import cors from "cors";
 import { errorHandler } from "./middlewares/error-handler";
 import { RegisterRoutes } from "./routes/v1/routes";
-// import swaggerUi from "swagger-ui-express"
-// import * as swaggerDocument from "../public/swagger.json";
+import swaggerUi from "swagger-ui-express"
+import * as swaggerDocument from "../public/swagger.json";
 
 // Create express app
 const app = express();
@@ -48,7 +48,7 @@ RegisterRoutes(app);
 // });
 
 //routes
-// app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // ========================
 // Global Error Handler

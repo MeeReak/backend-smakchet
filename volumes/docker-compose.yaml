@@ -3,7 +3,6 @@ services:
   rabbitmq:
     container_name: rabbitmq_container
     image: rabbitmq:3.13-rc-management-alpine
-    
     restart: always
     environment:
       - RABBITMQ_DEFAULT_USER=myuser
@@ -35,6 +34,7 @@ services:
       - NOTIFICATION_SERVICE_URL=http://notification:3002
       - USER_SERVICE_URL=http://user:3003
       - EVENT_SERVICE=http://event:3004
+      - APPLICATION_SERVICE_URL=http://application:3005
   auth:
     container_name: auth
     build:
@@ -86,6 +86,17 @@ services:
       - 3004:3004
     volumes:
       - ../event/src:/app/src
+  application:
+    container_name: application
+    build:
+      context: ../application
+      dockerfile: Dockerfile.dev
+    restart: always
+    ports:
+      - 3005:3005
+    env_file: ../application/configs/.env
+    volumes:
+      - ../application/src:/app/src
 networks:
   default:
     driver: bridge
