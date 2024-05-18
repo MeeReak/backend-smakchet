@@ -11,6 +11,7 @@ import {
   Post,
   Middlewares,
   Get,
+  Query,
 } from "tsoa"; // Import necessary decorators
 import { verifyToken } from "@user/middlewares/tokenValidation";
 
@@ -39,7 +40,6 @@ export class UserController extends Controller {
     @Path() userId: string,
     @Body() userProfileData: IUser
   ): Promise<any> {
-    console.log("jjloe");
     // Call UserService to update user profile using userId from the request object
     const updatedUserProfile = await userService.updateUserProfile(
       userId,
@@ -52,13 +52,13 @@ export class UserController extends Controller {
     };
   }
 
-  @Get("/:authId")
-  public async findUserByAuthid(@Path() authId: string): Promise<any> {
+  @Get("/:userId")
+  public async findUserByAuthid(@Query() userId: string): Promise<any> {
     try {
-      const user = await userService.findUserByAuhtid(authId);
+      const user = await userService.findUserByAuhtid(userId);
 
       return {
-        message: "Helo",
+        message: "User profile found successfully",
         data: user,
       };
     } catch (error: unknown) {

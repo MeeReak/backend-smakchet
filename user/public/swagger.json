@@ -9,7 +9,7 @@
 		"schemas": {
 			"IUser": {
 				"properties": {
-					"authId": {
+					"authid": {
 						"type": "string"
 					},
 					"username": {
