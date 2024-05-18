@@ -44,9 +44,7 @@ export class UserController {
   @SuccessResponse(StatusCode.Created, "Created")
   @Post("/signup")
   async SignUpWithEmail(@Body() requestBody: SignUpRequestBody): Promise<any> {
-
     try {
-      console.log("hei")
       const { username, email, password, role } = requestBody;
       const user = await this.userService.create({
         username,
@@ -108,8 +106,8 @@ export class UserController {
         role: userDetail.role!,
       };
 
-      const respone = await axios.post("http://localhost:3003/v1/user", data);
-    
+      const respone = await axios.post("http://user:3003/v1/user", data);
+
       const jwtToken = await generateToken(respone.data._id, user.role!);
 
       return { message: "User verify email successfully", token: jwtToken };
@@ -126,7 +124,9 @@ export class UserController {
 
       const user = await this.userService.login({ email, password });
 
-      const respone = await axios.get(`http://localhost:3003/v1/user/{userId}?userId=${user.id}`)
+      const respone = await axios.get(
+        `http://user:3003/v1/user/{userId}?userId=${user.id}`
+      );
 
       const jwtToken = await generateToken(respone.data._id, respone.data.role);
 
