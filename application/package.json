@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon  --exec ts-node -r tsconfig-paths/register  src/server.ts",
+    "start": "nodemon  --exec ts-node -r tsconfig-paths/register --legacy-watch src/server.ts",
     "gen:spec": "tsoa spec",
     "gen:routes": "tsoa routes",
     "gen:all": "npm run gen:spec && npm run gen:routes"
@@ -23,7 +23,6 @@
     "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.4",
-    "nodemon": "^3.1.0",
     "on-headers": "^1.0.2",
     "swagger-ui-express": "^5.0.0",
     "tsconfig-paths": "^4.2.0",
@@ -38,6 +37,8 @@
     "@types/hpp": "^0.2.6",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/on-headers": "^1.0.3",
-    "@types/swagger-ui-express": "^4.1.6"
+    "@types/swagger-ui-express": "^4.1.6",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
   }
 }

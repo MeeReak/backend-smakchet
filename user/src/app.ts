@@ -14,7 +14,7 @@ import swaggerUi from "swagger-ui-express";
 const app = express();
 
 // Get the Configs
-const config = getConfig(process.env.NODE_ENV)
+const config = getConfig(process.env.NODE_ENV);
 
 // =======================
 // Security Middlewares
@@ -37,7 +37,7 @@ app.use(compression());
 app.use(express.json({ limit: "200mb" }));
 app.use(urlencoded({ extended: true, limit: "200mb" }));
 app.use(express.static("public"));
-app.use(loggerMiddleware)
+app.use(loggerMiddleware);
 
 // ========================
 // Global API V1
@@ -54,4 +54,3 @@ RegisterRoutes(app);
 app.use(errorHandler);
 
 export default app;
-
