@@ -35,6 +35,24 @@ This section lists major frameworks and libraries used in the Volunteering Platf
 - **MongoDB**
 - **Docker**
 
+## Getting Started
+### With Docker
+Follow these steps to set up this project locally using Docker.
+#### Prerequisites
+Ensure you have the following software installed before proceeding:
+<br>
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+#### setup steps
+1. Navigate to the volumes folder:
+```bash
+cd volumes
+```
+2. Build and run the Docker containers:
+```bash
+docker compose up --build
+```
+After completing these steps, your project will be successfully set up locally!
   ## Usage
 Our platform supports two types of users, each with distinct features and functionalities:
 
@@ -57,5 +75,7 @@ Rin tithyareak - [Facebook](https://web.facebook.com/mee.reak.9461)
 <br>
 Peng maleap - [Facebook](https://web.facebook.com/izeerry)
 
-Team Email( smakchet.team@gmail.com) - smakchet.team@gmail.com
+figma-Link(https://www.figma.com/design/FRi5rN0B2IiiIOSwgiPLW0/SmakChet?t=UgDDxAnRQFHbTo4Q-0)
+<br>
+Team Email( smakchet.team@gmail.com)
 
