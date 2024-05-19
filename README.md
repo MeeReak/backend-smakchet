@@ -1,3 +1,4 @@
+<p align="center"><img src="https://github.com/MeeReak/backend-smakchet/assets/156150555/60021f68-ae1a-4ede-b46e-6d3284054cd2" width="120px"></p>
 <h1 align="center">Smakchet</h1>
 
 ## Table of Contents
