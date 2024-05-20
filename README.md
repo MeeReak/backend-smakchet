@@ -51,7 +51,7 @@ cd volumes
 ```
 2. Build and run the Docker containers:
 ```bash
-docker compose up --build
+npm run start
 ```
 After completing these steps, your project will be successfully set up locally!
   ## Usage
