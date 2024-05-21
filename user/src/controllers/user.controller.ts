@@ -6,7 +6,6 @@ import {
   Route,
   Path,
   Body,
-  // Middlewares,
   Post,
   Middlewares,
   Get,
@@ -15,11 +14,71 @@ import {
 import { verifyToken } from "@user/middlewares/tokenValidation";
 import axios from "axios";
 import { prettyPrintJson } from "@user/utils/beautifulLog";
+import mongoose from "mongoose";
 
 const userService = new UserServices();
 
 @Route("/v1/user")
 export class UserController extends Controller {
+  @Get("/")
+  public async showAllUser(): Promise<any> {
+    try {
+      return await userService.showAllUser();
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+
+  @Post("/:id")
+  @Middlewares(verifyToken)
+  public async addFavoEvent(
+    @Request() request: any,
+    @Path() id: string
+  ): Promise<any> {
+    try {
+      const user = await userService.findUserById(request.id);
+
+      // Validate objectId
+      if (!mongoose.Types.ObjectId.isValid(id)) {
+        throw new Error("Invalid event ID format");
+      }
+      const objectId = new mongoose.Types.ObjectId(id);
+
+      // Check for existing favorite using findIndex
+      const existingFavoriteIndex = user?.favorites.findIndex((item) =>
+        item.equals(objectId)
+      );
+      console.log(existingFavoriteIndex)
+
+      if (existingFavoriteIndex !== -1) {
+        // Remove event from favorites
+        user?.favorites.splice(existingFavoriteIndex!, 1);
+        await user?.save();
+
+        return {
+          message: "Event removed from favorites successfully",
+          data: user,
+        };
+      }
+
+      // Add event to favorites
+      user?.favorites.push(objectId);
+      await user?.save();
+
+      return {
+        message: "Event added to favorites successfully",
+        data: user,
+      };
+    } catch (error) {
+      console.error("Error adding/removing favorite:", error);
+      // You can customize the error response here based on error type
+      return {
+        success: false,
+        message: "An error occurred while processing your request",
+      };
+    }
+  }
+
   @Get("/favorite")
   @Middlewares(verifyToken)
   public async findFavoEvent(@Request() request: any): Promise<any> {
@@ -27,8 +86,6 @@ export class UserController extends Controller {
       const user = await userService.findUserById(request.id);
 
       const eventIds = user?.favorites;
-
-      // const events = [];
 
       const eventPromises = eventIds!.map(async (id) => {
         try {
@@ -47,13 +104,11 @@ export class UserController extends Controller {
         (event) => event !== null
       );
 
-      console.log("favorites: ", events);
       return {
         message: "Favorite events found successfully",
         data: events, // not wokring yet
       };
-    } catch (error: unknown | any) {
-      console.log(error);
+    } catch (error: unknown) {
       throw error;
     }
   }
@@ -99,15 +154,6 @@ export class UserController extends Controller {
         message: "User profile found successfully",
         data: user,
       };
-    } catch (error: unknown) {
-      throw error;
-    }
-  }
-
-  @Get("/")
-  public async showAllUser(): Promise<any> {
-    try {
-      return await userService.showAllUser();
     } catch (error: unknown) {
       throw error;
     }
