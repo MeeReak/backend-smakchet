@@ -37,8 +37,6 @@ export async function consumeAuthEmailMessages(
         msg!.content.toString()
       );
 
-      console.log(receiverEmail, username, verifyLink, template);
-
       const locals: IEmailLocals = {
         appLink: `${getConfig().clientUrl}`,
         appIcon: ``,

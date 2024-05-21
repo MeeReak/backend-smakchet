@@ -43,7 +43,6 @@ export default class NodemailerEmailApi implements EmailApi {
         },
       });
 
-      console.log(template);
       await email.send({
         template: path.join(__dirname, '../../src/emails', template),
         message: {

@@ -25,7 +25,7 @@
         { "transform": "typescript-transform-paths", "afterDeclarations": true },
       ],
       "paths": {
-        "@user/*": ["src/*"],
+        "@event/*": ["src/*"],
         "tsoa": ["node_modules/tsoa/dist"] 
       }
     }

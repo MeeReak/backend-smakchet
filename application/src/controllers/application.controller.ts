@@ -41,15 +41,13 @@ export class ApplicationController extends Controller {
   ): Promise<any> {
     try {
       const userId = request.userId;
-      console.log(userId);
+
       const formSubmit: FormSubmit = {
         userId: userId,
         eventId: "2",
         submitOn: new Date().toISOString(),
         responses: body,
       };
-
-      console.log(body);
 
       const formSubmitEvent = await AppService.applyEvent(formSubmit);
 

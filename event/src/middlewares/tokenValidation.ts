@@ -1,4 +1,5 @@
-import { privateKey } from "@user/server";
+
+import { privateKey } from "@event/server";
 import jwt from "jsonwebtoken";
 
 export const verifyToken = (req: any, _res: any, next: any) => {
@@ -8,15 +9,12 @@ export const verifyToken = (req: any, _res: any, next: any) => {
     throw new Error("Token not provided");
   }
 
-  console.log("token", token);
   try {
     const decodedToken = jwt.verify(token, privateKey, {
       algorithms: ["RS256"],
     }) as {
       userId: string;
     };
-
-    console.log("heloo", decodedToken);
 
     req.userId = decodedToken.userId; // Attach userId to the request object
     next(); // If token is valid, continue to the next middleware or route handler

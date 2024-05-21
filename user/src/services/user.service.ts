@@ -16,19 +16,19 @@ export class UserServices {
   }
 
   async updateUserProfile(
-    userId: string,
+    id: string,
     userProfileData: IUser
   ): Promise<any> {
     try {
-      return this.userRepo.updateUserProfile(userId, userProfileData);
+      return this.userRepo.updateUserProfile(id, userProfileData);
     } catch (error: unknown | any) {
       throw error;
     }
   }
 
-  async findUserByAuhtid(userId: string) {
+  async findUserByAuthId(id: string) {
     try {
-      return await this.userRepo.findUserByAuthId(userId);
+      return await this.userRepo.findUserByAuthId(id);
     } catch (error: unknown) {
       throw error;
     }
@@ -38,6 +38,15 @@ export class UserServices {
     try {
       return await this.userRepo.showAllUser()
     } catch (error: unknown) {
+      throw error
+    }
+  }
+
+  // find user by id
+  async findUserById(id: string){
+    try{
+      return await this.userRepo.findUserById(id)
+    }catch(error:unknown){
       throw error
     }
   }

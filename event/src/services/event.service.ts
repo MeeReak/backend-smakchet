@@ -1,7 +1,8 @@
-import { EventDetail } from "@user/databases/@types/event.interface";
-import { EventRepository } from "@user/databases/repositories/event.reposities";
-import APIError from "@user/Errors/api-error";
-import { StatusCode } from "@user/utils/consts";
+import { EventDetail } from "@event/databases/@types/event.interface";
+import { EventRepository } from "@event/databases/repositories/event.reposities";
+import APIError from "@event/Errors/api-error";
+import { StatusCode } from "@event/utils/consts";
+
 
 export class EventService {
   public eventRepo: EventRepository;
@@ -45,7 +46,7 @@ export class EventService {
     }
   }
 
-  async findEvent(id: string) {
+  async findEventById(id: string) {
     try {
       return await this.eventRepo.findEvent(id);
     } catch (error: unknown) {

@@ -7,7 +7,6 @@ export const verifyToken = (req: any, _res: any, next: any) => {
     throw new Error("Token not provided");
   }
 
-  //console.log("token : ", token);
   try {
     const decodedToken = jwt.verify(token, privateKey, {
       algorithms: ["RS256"],
@@ -15,10 +14,10 @@ export const verifyToken = (req: any, _res: any, next: any) => {
       userId: string;
     };
 
-    //console.log("heloo", decodedToken);
+
 
     req.userId = decodedToken.userId; // Attach userId to the request object
-    console.log(req.userId);
+
     next(); // If token is valid, continue to the next middleware or route handler
   } catch (error: any) {
     throw new Error(error.message); // Throw error for invalid token

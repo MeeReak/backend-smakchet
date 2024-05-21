@@ -144,9 +144,6 @@
 						}
 					}
 				},
-				"tags": [
-					"Event"
-				],
 				"security": [],
 				"parameters": [],
 				"requestBody": {
@@ -174,9 +171,6 @@
 						}
 					}
 				},
-				"tags": [
-					"Event"
-				],
 				"security": [],
 				"parameters": [
 					{
@@ -199,7 +193,7 @@
 					}
 				}
 			},
-			"get": {
+			"delete": {
 				"operationId": "DeleteEvent",
 				"responses": {
 					"200": {
@@ -221,9 +215,30 @@
 						}
 					}
 				},
-				"tags": [
-					"Event"
-				],
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"get": {
+				"operationId": "FindFavoEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
 				"security": [],
 				"parameters": [
 					{

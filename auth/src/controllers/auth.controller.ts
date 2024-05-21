@@ -108,7 +108,7 @@ export class UserController {
 
       const respone = await axios.post("http://user:3003/v1/user", data);
 
-      const jwtToken = await generateToken(respone.data._id, user.role!);
+      const jwtToken = await generateToken(respone.data.data._id, user.role!);
 
       return { message: "User verify email successfully", token: jwtToken };
     } catch (error: unknown) {
@@ -254,6 +254,16 @@ export class UserController {
       //generate jwtToken
       return await generateToken(user.id, user.username);
     } catch (error: unknown) {
+      throw error;
+    }
+  }
+
+
+  @Get("/logout")
+  async Logout() {
+    try{
+      
+    }catch(error: unknown){
       throw error;
     }
   }
