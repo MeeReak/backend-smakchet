@@ -114,7 +114,7 @@ const proxyConfigs: ProxyConfig = {
         const token = expressReq.session!.jwt;
         proxyReq.setHeader("Authorization", `Bearer ${token}`);
       },
-      proxyRes: (proxyRes, req, res) => {
+      proxyRes: (proxyRes, _req, res) => {
         let originalBody: Buffer[] = [];
         proxyRes.on("data", function (chunk: Buffer) {
           originalBody.push(chunk);
@@ -132,18 +132,12 @@ const proxyConfigs: ProxyConfig = {
           try {
             responseBody = JSON.parse(bodyString);
 
-            // If Response Error, Not Modified Response
+            // If Response Error
             if (responseBody.errors) {
               return res.status(proxyRes.statusCode!).json(responseBody);
             }
 
-            // Store JWT in session
-            if (responseBody.token) {
-              (req as Request).session!.jwt = responseBody.token;
-            }
-
-            // Modify response to send only the message to the client
-            res.json({ message: responseBody.message });
+            return res.status(proxyRes.statusCode!).json(responseBody);
           } catch (error) {
             return res.status(500).json({ message: "Error parsing response" });
           }
@@ -192,7 +186,7 @@ const proxyConfigs: ProxyConfig = {
         const token = expressReq.session!.jwt;
         proxyReq.setHeader("Authorization", `Bearer ${token}`);
       },
-      proxyRes: (proxyRes, req, res) => {
+      proxyRes: (proxyRes, _req, res) => {
         let originalBody: Buffer[] = [];
         proxyRes.on("data", function (chunk: Buffer) {
           originalBody.push(chunk);
@@ -210,18 +204,12 @@ const proxyConfigs: ProxyConfig = {
           try {
             responseBody = JSON.parse(bodyString);
 
-            // If Response Error, Not Modified Response
+            // If Response Error
             if (responseBody.errors) {
               return res.status(proxyRes.statusCode!).json(responseBody);
             }
 
-            // Store JWT in session
-            if (responseBody.token) {
-              (req as Request).session!.jwt = responseBody.token;
-            }
-
-            // Modify response to send only the message to the client
-            res.json({ message: responseBody.message });
+            return res.status(proxyRes.statusCode!).json(responseBody);
           } catch (error) {
             return res.status(500).json({ message: "Error parsing response" });
           }

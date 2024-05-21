@@ -66,9 +66,9 @@
 		"contact": {}
 	},
 	"paths": {
-		"/v1/user/favorite": {
+		"/v1/user": {
 			"get": {
-				"operationId": "FindFavoEvent",
+				"operationId": "ShowAllUser",
 				"responses": {
 					"200": {
 						"description": "Ok",
@@ -81,9 +81,7 @@
 				},
 				"security": [],
 				"parameters": []
-			}
-		},
-		"/v1/user": {
+			},
 			"post": {
 				"operationId": "CreateUser",
 				"responses": {
@@ -108,9 +106,11 @@
 						}
 					}
 				}
-			},
-			"get": {
-				"operationId": "ShowAllUser",
+			}
+		},
+		"/v1/user/{id}": {
+			"post": {
+				"operationId": "AddFavoEvent",
 				"responses": {
 					"200": {
 						"description": "Ok",
@@ -122,10 +122,17 @@
 					}
 				},
 				"security": [],
-				"parameters": []
-			}
-		},
-		"/v1/user/{id}": {
+				"parameters": [
+					{
+						"in": "path",
+						"name": "id",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
 			"put": {
 				"operationId": "UpdateProfile",
 				"responses": {
@@ -183,6 +190,23 @@
 						}
 					}
 				]
+			}
+		},
+		"/v1/user/favorite": {
+			"get": {
+				"operationId": "FindFavoEvent",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
 			}
 		}
 	},
