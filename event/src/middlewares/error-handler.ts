@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { StatusCode } from "../utils/consts/status-code";
-import BaseCustomError from "@user/Errors/base-custom-error";
+import BaseCustomError from "@event/Errors/base-custom-error";
 
 const errorHandler = (
   err: Error,

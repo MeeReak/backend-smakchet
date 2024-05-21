@@ -6,7 +6,7 @@ import APIError from "@application/errors/api-error";
 export const validateInput = (schema: ZodSchema) => {
   return (_req: Request, _res: Response, _next: NextFunction) => {
     try {
-      console.log(_req.body);
+
       schema.parse(_req.body);
       _next();
     } catch (error: any | unknown) {

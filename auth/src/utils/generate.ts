@@ -16,7 +16,7 @@ export const generateToken = async (id: string, role: string) => {
   try {
     // JWT payload containing user information
     const payload = {
-      userId: id,
+      id: id,
       role: role,
     };
 
@@ -25,7 +25,7 @@ export const generateToken = async (id: string, role: string) => {
       expiresIn: "3d",
       algorithm: "RS256",
     });
-    
+
     return token;
   } catch (error: unknown) {
     console.log(error);

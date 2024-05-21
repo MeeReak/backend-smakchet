@@ -33,7 +33,6 @@ app.use(
 app.use(express.json({ limit: "10mb" }));
 app.use((_req: Request, _res: Response, _next: NextFunction) => {
   console.log(_req.path, _req.method);
-  console.log(_req.body);
   _next();
 });
 app.use(express.urlencoded({ extended: true, limit: "200mb" }));

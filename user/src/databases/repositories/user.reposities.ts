@@ -12,14 +12,14 @@ class UserRepository {
   }
 
   async updateUserProfile(
-    userId: string,
+    id: string,
     userProfileData: IUser
   ): Promise<any> {
     try {
-      if (!mongoose.Types.ObjectId.isValid(userId)) {
+      if (!mongoose.Types.ObjectId.isValid(id)) {
         return null;
       }
-      const user = await UserModel.findByIdAndUpdate(userId, userProfileData, {
+      const user = await UserModel.findByIdAndUpdate(id, userProfileData, {
         new: true,
       });
       if (!user) {
@@ -43,6 +43,15 @@ class UserRepository {
   async showAllUser() {
     try {
       return await UserModel.find();
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+
+  //find user by id
+  async findUserById(id: string) {
+    try {
+      return await UserModel.findById(id);
     } catch (error: unknown) {
       throw error;
     }

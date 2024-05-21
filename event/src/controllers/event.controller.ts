@@ -1,23 +1,22 @@
-import { EventDetail } from "@user/databases/@types/event.interface";
-import { validateInput } from "@user/middlewares/input-validation";
-import { EventDetailSchema } from "@user/schemas/event.schema";
-import { EventService } from "@user/services/event.service";
+import { EventDetail } from "@event/databases/@types/event.interface";
+import { validateInput } from "@event/middlewares/input-validation";
+import { EventDetailSchema } from "@event/schemas/event.schema";
+import { EventService } from "@event/services/event.service";
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Middlewares,
   Path,
   Post,
   Put,
   Route,
-  Tags,
 } from "tsoa";
 
 const eventService = new EventService();
 
 @Route("/v1/events")
-@Tags("Event")
 export class EventController extends Controller {
   @Post("/")
   @Middlewares(validateInput(EventDetailSchema))
@@ -50,7 +49,7 @@ export class EventController extends Controller {
     }
   }
 
-  @Get("/:id")
+  @Delete("/:id")
   public async DeleteEvent(@Path() id: string) {
     try {
       await eventService.deleteEvent(id);
@@ -59,4 +58,16 @@ export class EventController extends Controller {
       throw error;
     }
   }
+
+  @Get("/:id")
+  public async FindFavoEvent(@Path() id: string): Promise<any> {
+    try {
+      const event = await eventService.findEventById(id)
+
+      return event
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
+ 
 }

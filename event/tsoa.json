@@ -12,7 +12,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@event/*": ["src/*"]
+      "@event/*": [
+        "src/*"
+      ]
     }
   }
 }
