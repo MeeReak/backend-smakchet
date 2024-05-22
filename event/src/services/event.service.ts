@@ -53,4 +53,13 @@ export class EventService {
       throw error;
     }
   }
+
+
+  async findEventByOrgId(id: string){
+    try{
+      return await this.eventRepo.findEventByOrgId(id)
+    }catch(error: unknown){
+      throw error
+    }
+  }
 }

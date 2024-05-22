@@ -33,4 +33,12 @@ export class EventRepository {
       throw error;
     }
   }
+
+  async findEventByOrgId(id: string) {
+    try {
+      return await EventModel.findOne({ orgId: id });
+    } catch (error: unknown) {
+      throw error;
+    }
+  }
 }

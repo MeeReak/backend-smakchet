@@ -2,6 +2,9 @@ import mongoose, { Schema } from "mongoose";
 
 const eventSchema = new Schema(
   {
+    orgId:{
+      type: mongoose.Types.ObjectId
+    },
     thumbnail: {
       type: String,
     },

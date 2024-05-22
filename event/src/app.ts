@@ -42,7 +42,6 @@ app.use(loggerMiddleware);
 // ========================
 // Global API V1
 // ========================
-
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // user Route

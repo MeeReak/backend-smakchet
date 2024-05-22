@@ -191,7 +191,7 @@ const proxyConfigs: ProxyConfig = {
         proxyRes.on("data", function (chunk: Buffer) {
           originalBody.push(chunk);
         });
-        console.log(originalBody);
+
         proxyRes.on("end", function () {
           const bodyString = Buffer.concat(originalBody).toString("utf8");
 

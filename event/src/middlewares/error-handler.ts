@@ -14,7 +14,7 @@ const errorHandler = (
 
   return res
     .status(StatusCode.InternalServerError)
-    .json({ errors: [{ message: "An unexpected error occurred" }] });
+    .json({ errors: [{ message: err }] });
 };
 
 export { errorHandler };

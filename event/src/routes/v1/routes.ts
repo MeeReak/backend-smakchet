@@ -11,6 +11,11 @@ import type { Request as ExRequest, Response as ExResponse, RequestHandler, Rout
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
 const models: TsoaRoute.Models = {
+    "mongoose.Types.ObjectId": {
+        "dataType": "refAlias",
+        "type": {"dataType":"string","validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "FormSubmission": {
         "dataType": "refObject",
         "properties": {
@@ -24,6 +29,7 @@ const models: TsoaRoute.Models = {
     "EventDetail": {
         "dataType": "refObject",
         "properties": {
+            "orgId": {"ref":"mongoose.Types.ObjectId"},
             "thumbnail": {"dataType":"string"},
             "eventname": {"dataType":"string"},
             "address": {"dataType":"nestedObjectLiteral","nestedProperties":{"lng":{"dataType":"string","required":true},"lat":{"dataType":"string","required":true}}},
@@ -55,6 +61,7 @@ export function RegisterRoutes(app: Router) {
             async function EventController_CreateEvent(request: ExRequest, response: ExResponse, next: any) {
             const args: Record<string, TsoaRoute.ParameterSchema> = {
                     requestBody: {"in":"body","name":"requestBody","required":true,"ref":"EventDetail"},
+                    request: {"in":"request","name":"request","required":true,"dataType":"object"},
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -84,6 +91,7 @@ export function RegisterRoutes(app: Router) {
 
             async function EventController_UpdateEvent(request: ExRequest, response: ExResponse, next: any) {
             const args: Record<string, TsoaRoute.ParameterSchema> = {
+                    request: {"in":"request","name":"request","required":true,"dataType":"object"},
                     id: {"in":"path","name":"id","required":true,"dataType":"string"},
                     requestBody: {"in":"body","name":"requestBody","required":true,"ref":"EventDetail"},
             };
