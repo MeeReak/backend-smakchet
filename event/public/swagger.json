@@ -7,6 +7,9 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
+			"mongoose.Types.ObjectId": {
+				"type": "string"
+			},
 			"FormSubmission": {
 				"properties": {
 					"label": {
@@ -32,6 +35,9 @@
 			},
 			"EventDetail": {
 				"properties": {
+					"orgId": {
+						"$ref": "#/components/schemas/mongoose.Types.ObjectId"
+					},
 					"thumbnail": {
 						"type": "string"
 					},

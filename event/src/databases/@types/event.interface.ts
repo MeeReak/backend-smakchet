@@ -1,4 +1,7 @@
+import mongoose from "mongoose";
+
 export interface EventDetail {
+  orgId?: mongoose.Types.ObjectId
   thumbnail?: string;
   eventname?: string;
   address?: {

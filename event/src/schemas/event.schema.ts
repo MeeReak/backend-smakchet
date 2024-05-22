@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 export const EventDetailSchema = z.object({
+  orgId: z.string(),
   thumbnail: z.string(),
   eventname: z.string().min(3),
   address: z.object({
